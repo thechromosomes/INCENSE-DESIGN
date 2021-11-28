@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--==========================
-    Intro Section
+    Intro Section.
   ============================-->
     <section id="intro">
       <div class="intro-content">
