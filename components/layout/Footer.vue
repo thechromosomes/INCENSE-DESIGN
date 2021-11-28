@@ -1,0 +1,9 @@
+<template>
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>INCENSE DESIGN</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+</template>
