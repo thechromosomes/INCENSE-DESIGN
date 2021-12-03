@@ -20,6 +20,29 @@ export default {
         href: "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700",
         rel: "stylesheet",
       },
+
+      // index page css
+       {
+          rel: "stylesheet",
+          id: "elementor-frontend-css",
+          href: "@/assets/css/frontend.min.css",
+          type: "text/css",
+          media: "all",
+        },
+        {
+          rel: "stylesheet",
+          id: "elementor-post-498-css",
+          href: "@/assets/css/post-498.css",
+          type: "text/css",
+          media: "all",
+        },
+        {
+          rel: "stylesheet",
+          id: "ekit-widget-styles-css",
+          href: "@/assets/css/widget-styles.css",
+          type: "text/css",
+          media: "all",
+        },
     ],
   },
 
