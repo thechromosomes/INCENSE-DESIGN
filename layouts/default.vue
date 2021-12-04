@@ -3,11 +3,11 @@
     <div>
       <Header />
     </div>
-    <div>
+    <div class="main-class">
       <nuxt />
     </div>
     <div>
-      <Footer />
+      <!-- <Footer /> -->
     </div>
   </div>
 </template>
@@ -23,4 +23,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.main-class {
+  min-height: 500px;
+}
+</style>
 

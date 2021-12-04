@@ -30,250 +30,6 @@
               elementor-section
               elementor-top-section
               elementor-element
-              elementor-element-5151d31
-              elementor-section-boxed
-              elementor-section-height-default
-              elementor-section-height-default
-            "
-            data-id="5151d31"
-            data-element_type="section"
-            data-settings='{"background_background":"classic"}'
-          >
-            <div class="elementor-container elementor-column-gap-default">
-              <div class="elementor-row">
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-50
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-051ac4f
-                  "
-                  data-id="051ac4f"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-f238ad4
-                          elementor-widget
-                          elementor-widget-image
-                        "
-                        data-id="f238ad4"
-                        data-element_type="widget"
-                        data-widget_type="image.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-image">
-                            <img
-                              width="150"
-                              height="150"
-                              src="@/assets/img/team1.jpg"
-                              class="attachment-thumbnail size-thumbnail"
-                              alt=""
-                              loading="lazy"
-                              srcset="
-                                https://easyinterio.com/quote/wp-content/uploads/2020/06/EASY-INTERIOR-512-150x150.png 150w,
-                                https://easyinterio.com/quote/wp-content/uploads/2020/06/EASY-INTERIOR-512-300x300.png 300w,
-                                https://easyinterio.com/quote/wp-content/uploads/2020/06/EASY-INTERIOR-512.png         512w
-                              "
-                              sizes="(max-width: 150px) 100vw, 150px"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-50
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-de9cd45
-                  "
-                  data-id="de9cd45"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-f786fdb
-                          elementor-widget
-                          elementor-widget-elementskit-button
-                        "
-                        data-id="f786fdb"
-                        data-element_type="widget"
-                        data-widget_type="elementskit-button.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="ekit-wid-con">
-                            <div class="ekit-btn-wraper">
-                              <a
-                                href="https://easyinterio.com/quote/noida/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjUwNiIsInRvZ2dsZSI6ZmFsc2V9"
-                                class="elementskit-btn whitespace--normal"
-                              >
-                                Get Free Quote
-                                <i
-                                  aria-hidden="true"
-                                  class="icon icon-right-arrow"
-                                ></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            class="
-              elementor-section
-              elementor-top-section
-              elementor-element
-              elementor-element-6cb87512
-              elementor-hidden-desktop
-              elementor-hidden-tablet
-              elementor-hidden-phone
-              elementor-section-boxed
-              elementor-section-height-default
-              elementor-section-height-default
-            "
-            data-id="6cb87512"
-            data-element_type="section"
-            data-settings='{"background_background":"classic"}'
-          >
-            <div class="elementor-container elementor-column-gap-default">
-              <div class="elementor-row">
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-33
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-fce16c9
-                  "
-                  data-id="fce16c9"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-389a0c42
-                          elementor-widget
-                          elementor-widget-image
-                        "
-                        data-id="389a0c42"
-                        data-element_type="widget"
-                        data-widget_type="image.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-image">
-                            <img
-                              width="512"
-                              height="512"
-                              src="@/assets/img/team1.jpg"
-                              class="attachment-large size-large"
-                              alt=""
-                              loading="lazy"
-                              srcset="
-                                https://easyinterio.com/quote/wp-content/uploads/2020/06/EASY-INTERIOR-512.png         512w,
-                                https://easyinterio.com/quote/wp-content/uploads/2020/06/EASY-INTERIOR-512-300x300.png 300w,
-                                https://easyinterio.com/quote/wp-content/uploads/2020/06/EASY-INTERIOR-512-150x150.png 150w
-                              "
-                              sizes="(max-width: 512px) 100vw, 512px"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-33
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-2f89fe03
-                  "
-                  data-id="2f89fe03"
-                  data-element_type="column"
-                >
-                  <div class="elementor-column-wrap">
-                    <div class="elementor-widget-wrap"></div>
-                  </div>
-                </div>
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-33
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-621bf3fa
-                  "
-                  data-id="621bf3fa"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-5606fe3d
-                          elementor-widget
-                          elementor-widget-elementskit-button
-                        "
-                        data-id="5606fe3d"
-                        data-element_type="widget"
-                        data-widget_type="elementskit-button.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="ekit-wid-con">
-                            <div class="ekit-btn-wraper">
-                              <a
-                                href="https://easyinterio.com/quote/noida/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjUwNiIsInRvZ2dsZSI6ZmFsc2V9"
-                                class="elementskit-btn whitespace--normal"
-                              >
-                                Get Free Quote
-                                <i
-                                  aria-hidden="true"
-                                  class="icon icon-right-arrow"
-                                ></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            class="
-              elementor-section
-              elementor-top-section
-              elementor-element
               elementor-element-46086e6e
               elementor-section-boxed
               elementor-section-height-default
@@ -330,7 +86,7 @@
                                   elementskit-section-title
                                 "
                               >
-                                Easy Interio
+                                INCENSE DESIGN
                               </h2>
                               <div class="ekit-heading__description">
                                 <p>Delivery in 45 Days</p>
@@ -548,7 +304,7 @@
                                               elementskit-section-title
                                             "
                                           >
-                                            Why Choose Easy Interio?
+                                            Why Choose INCENSE DESIGN?
                                           </h2>
                                         </div>
                                       </div>
@@ -4342,7 +4098,7 @@
                                                           <img
                                                             width="160"
                                                             height="160"
-                                                            src="@/assets/img/team1.jpg"
+                                                            src="@/assets/img/woman.png"
                                                             class="
                                                               attachment-full
                                                               size-full
@@ -4368,7 +4124,7 @@
                                                         class="
                                                           elementskit-author-name
                                                         "
-                                                        >Rahul Bhatnagar</strong
+                                                        >Your name</strong
                                                       >
                                                     </div>
 
@@ -4380,13 +4136,7 @@
                                                       <p>
                                                         Very high quality
                                                         plywoods with many
-                                                        designs. Also, they are
-                                                        very experienced in
-                                                        interior designing,
-                                                        submitting the projects
-                                                        on time. Also, the
-                                                        nature of the owner is
-                                                        very friendly.
+                                                        designs.
                                                       </p>
                                                     </div>
                                                   </div>
@@ -4439,7 +4189,7 @@
                                                           <img
                                                             width="160"
                                                             height="160"
-                                                            src="@/assets/img/team1.jpg"
+                                                            src="@/assets/img/woman.png"
                                                             class="
                                                               attachment-full
                                                               size-full
@@ -4465,7 +4215,7 @@
                                                         class="
                                                           elementskit-author-name
                                                         "
-                                                        >Sunita Shah</strong
+                                                        >Your name</strong
                                                       >
                                                     </div>
 
@@ -4527,7 +4277,7 @@
                                                           <img
                                                             width="81"
                                                             height="81"
-                                                            src="@/assets/img/team1.jpg"
+                                                            src="@/assets/img/woman.png"
                                                             class="
                                                               attachment-full
                                                               size-full
@@ -4548,7 +4298,7 @@
                                                         class="
                                                           elementskit-author-name
                                                         "
-                                                        >Malik Khan</strong
+                                                        >your name</strong
                                                       >
                                                     </div>
 
@@ -4558,13 +4308,8 @@
                                                       "
                                                     >
                                                       <p>
-                                                        Few things I would like
-                                                        to highlight is their
-                                                        commitment towards
-                                                        agreed timeline,
-                                                        transparency with
-                                                        clients and suggestions
-                                                        stands at the peak.
+                                                        Their commitment towards
+                                                        agreed timeline.
                                                       </p>
                                                     </div>
                                                   </div>
@@ -4793,432 +4538,6 @@
               </div>
             </div>
           </section>
-          <section
-            class="
-              elementor-section
-              elementor-top-section
-              elementor-element
-              elementor-element-36871a83
-              elementor-section-boxed
-              elementor-section-height-default
-              elementor-section-height-default
-              elementor-sticky
-              elementor-sticky--effects
-              elementor-sticky--active
-              elementor-section--handles-inside
-            "
-            data-id="36871a83"
-            data-element_type="section"
-            data-settings='{"background_background":"classic","sticky":"bottom","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0}'
-            style="
-              position: fixed;
-              width: 1585px;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              bottom: 0px;
-            "
-          >
-            <div class="elementor-container elementor-column-gap-default">
-              <div class="elementor-row">
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-100
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-25bc8c80
-                  "
-                  data-id="25bc8c80"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-29907c8f
-                          elementor-mobile-align-center
-                          elementor-widget
-                          elementor-widget-button
-                        "
-                        data-id="29907c8f"
-                        data-element_type="widget"
-                        data-widget_type="button.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-button-wrapper">
-                            <a
-                              href="https://easyinterio.com/quote/noida/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjUwNiIsInRvZ2dsZSI6ZmFsc2V9"
-                              class="
-                                elementor-button-link
-                                elementor-button
-                                elementor-size-sm
-                              "
-                              role="button"
-                            >
-                              <span class="elementor-button-content-wrapper">
-                                <span
-                                  class="
-                                    elementor-button-icon
-                                    elementor-align-icon-left
-                                  "
-                                >
-                                  <i
-                                    aria-hidden="true"
-                                    class="icon icon-arrow-right"
-                                  ></i>
-                                </span>
-                                <span class="elementor-button-text"
-                                  >Get Free Quote</span
-                                >
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-6c332ec0
-                          elementor-widget
-                          elementor-widget-spacer
-                        "
-                        data-id="6c332ec0"
-                        data-element_type="widget"
-                        data-widget_type="spacer.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            class="
-              elementor-section
-              elementor-top-section
-              elementor-element
-              elementor-element-36871a83
-              elementor-section-boxed
-              elementor-section-height-default
-              elementor-section-height-default
-              elementor-sticky
-              elementor-sticky__spacer
-            "
-            data-id="36871a83"
-            data-element_type="section"
-            data-settings='{"background_background":"classic","sticky":"bottom","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0}'
-            style="
-              visibility: hidden;
-              transition: none 0s ease 0s;
-              animation: 0s ease 0s 1 normal none running none;
-            "
-          >
-            <div class="elementor-container elementor-column-gap-default">
-              <div class="elementor-row">
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-100
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-25bc8c80
-                  "
-                  data-id="25bc8c80"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-29907c8f
-                          elementor-mobile-align-center
-                          elementor-widget
-                          elementor-widget-button
-                        "
-                        data-id="29907c8f"
-                        data-element_type="widget"
-                        data-widget_type="button.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-button-wrapper">
-                            <a
-                              href="https://easyinterio.com/quote/noida/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjUwNiIsInRvZ2dsZSI6ZmFsc2V9"
-                              class="
-                                elementor-button-link
-                                elementor-button
-                                elementor-size-sm
-                              "
-                              role="button"
-                            >
-                              <span class="elementor-button-content-wrapper">
-                                <span
-                                  class="
-                                    elementor-button-icon
-                                    elementor-align-icon-left
-                                  "
-                                >
-                                  <i
-                                    aria-hidden="true"
-                                    class="icon icon-arrow-right"
-                                  ></i>
-                                </span>
-                                <span class="elementor-button-text"
-                                  >Get Free Quote</span
-                                >
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-6c332ec0
-                          elementor-widget
-                          elementor-widget-spacer
-                        "
-                        data-id="6c332ec0"
-                        data-element_type="widget"
-                        data-widget_type="spacer.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            class="
-              elementor-section
-              elementor-top-section
-              elementor-element
-              elementor-element-49238aac
-              elementor-section-boxed
-              elementor-section-height-default
-              elementor-section-height-default
-              elementor-sticky
-              elementor-sticky--effects
-              elementor-sticky--active
-              elementor-section--handles-inside
-            "
-            data-id="49238aac"
-            data-element_type="section"
-            data-settings='{"background_background":"classic","sticky":"bottom","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0}'
-            style="
-              position: fixed;
-              width: 1585px;
-              margin-top: 0px;
-              margin-bottom: 0px;
-              bottom: 0px;
-            "
-          >
-            <div class="elementor-container elementor-column-gap-default">
-              <div class="elementor-row">
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-50
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-2ad35fca
-                    elementor-hidden-desktop
-                    elementor-hidden-tablet
-                    elementor-hidden-phone
-                  "
-                  data-id="2ad35fca"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element elementor-element-1faab473
-                          elementor-widget__width-auto
-                          elementor-widget elementor-widget-elementskit-button
-                        "
-                        data-id="1faab473"
-                        data-element_type="widget"
-                        data-widget_type="elementskit-button.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="ekit-wid-con">
-                            <div class="ekit-btn-wraper">
-                              <a
-                                href="https://easyinterio.com/quote/noida/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjgxIiwidG9nZ2xlIjpmYWxzZX0%3D"
-                                class="elementskit-btn whitespace--normal"
-                              >
-                                Get Quote
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-50
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-3296ef1f
-                  "
-                  data-id="3296ef1f"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-77c7b942
-                          elementor-widget
-                          elementor-widget-spacer
-                        "
-                        data-id="77c7b942"
-                        data-element_type="widget"
-                        data-widget_type="spacer.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            class="
-              elementor-section
-              elementor-top-section
-              elementor-element
-              elementor-element-49238aac
-              elementor-section-boxed
-              elementor-section-height-default
-              elementor-section-height-default
-              elementor-sticky
-              elementor-sticky__spacer
-            "
-            data-id="49238aac"
-            data-element_type="section"
-            data-settings='{"background_background":"classic","sticky":"bottom","sticky_on":["desktop","tablet","mobile"],"sticky_offset":0,"sticky_effects_offset":0}'
-            style="
-              visibility: hidden;
-              transition: none 0s ease 0s;
-              animation: 0s ease 0s 1 normal none running none;
-            "
-          >
-            <div class="elementor-container elementor-column-gap-default">
-              <div class="elementor-row">
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-50
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-2ad35fca
-                    elementor-hidden-desktop
-                    elementor-hidden-tablet
-                    elementor-hidden-phone
-                  "
-                  data-id="2ad35fca"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element elementor-element-1faab473
-                          elementor-widget__width-auto
-                          elementor-widget elementor-widget-elementskit-button
-                        "
-                        data-id="1faab473"
-                        data-element_type="widget"
-                        data-widget_type="elementskit-button.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="ekit-wid-con">
-                            <div class="ekit-btn-wraper">
-                              <a
-                                href="https://easyinterio.com/quote/noida/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjgxIiwidG9nZ2xlIjpmYWxzZX0%3D"
-                                class="elementskit-btn whitespace--normal"
-                              >
-                                Get Quote
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="
-                    elementor-column
-                    elementor-col-50
-                    elementor-top-column
-                    elementor-element
-                    elementor-element-3296ef1f
-                  "
-                  data-id="3296ef1f"
-                  data-element_type="column"
-                >
-                  <div
-                    class="elementor-column-wrap elementor-element-populated"
-                  >
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="
-                          elementor-element
-                          elementor-element-77c7b942
-                          elementor-widget
-                          elementor-widget-spacer
-                        "
-                        data-id="77c7b942"
-                        data-element_type="widget"
-                        data-widget_type="spacer.default"
-                      >
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
       </div>
     </div>
@@ -5251,64 +4570,6 @@ export default {
           content: "this.url",
           property: "og:url",
         },
-      ],
-      link: [
-        // {
-        //   rel: "stylesheet",
-        //   id: "auto-trigger-next-css-css",
-        //   href: "./Noida – Easy Interio_files/aafg_styles.css",
-        //   type: "text/css",
-        //   media: "all",
-        // },
-        // {
-        //   rel: "stylesheet",
-        //   id: "wp-block-library-css",
-        //   href: "./Noida – Easy Interio_files/style.min.css",
-        //   type: "text/css",
-        //   media: "all",
-        // },
-        // {
-        //   rel: "stylesheet",
-        //   id: "hello-elementor-css",
-        //   href: "./Noida – Easy Interio_files/style.min(1).css",
-        //   type: "text/css",
-        //   media: "all",
-        // },
-        // {
-        //   rel: "stylesheet",
-        //   id: "hello-elementor-theme-style-css",
-        //   href: "./Noida – Easy Interio_files/theme.min.css",
-        //   type: "text/css",
-        //   media: "all",
-        // },
-        // {
-        //   rel: "stylesheet",
-        //   id: "elementor-frontend-legacy-css",
-        //   href: "./Noida – Easy Interio_files/frontend-legacy.min.css",
-        //   type: "text/css",
-        //   media: "all",
-        // },
-        // {
-        //   rel: "stylesheet",
-        //   id: "elementor-frontend-css",
-        //   href: "../assets/css/frontend.min.css",
-        //   type: "text/css",
-        //   media: "all",
-        // },
-        // {
-        //   rel: "stylesheet",
-        //   id: "elementor-post-498-css",
-        //   href: "../assets/css/post-498.css",
-        //   type: "text/css",
-        //   media: "all",
-        // },
-        // {
-        //   rel: "stylesheet",
-        //   id: "ekit-widget-styles-css",
-        //   href: "../assets/css/widget-styles.css",
-        //   type: "text/css",
-        //   media: "all",
-        // },
       ],
     };
   },
