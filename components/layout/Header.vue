@@ -14,6 +14,8 @@
           <li><a href="/services">Services</a></li>
           <li><a href="/aboutUs">About Us</a></li>
           <li><a href="contactUs">Contact</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+
         </ul>
       </nav>
       <!-- #nav-menu-container -->

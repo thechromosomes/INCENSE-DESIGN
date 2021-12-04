@@ -27,6 +27,7 @@ export default {
 <style scoped>
 .main-class {
   min-height: 500px;
+  margin-top: 60px;
 }
 </style>
 

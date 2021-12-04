@@ -4538,6 +4538,9 @@
               </div>
             </div>
           </section>
+          <section class="bottomStickBotton">
+            <a href="https://wa.me/message/9988998898" target="blank"><img src="@/assets/img/whatsApp.png"> </a>
+          </section>
         </div>
       </div>
     </div>
