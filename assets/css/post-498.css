@@ -167,10 +167,10 @@
   .elementor-element.elementor-element-46086e6e
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("https://easyinterio.com/quote/wp-content/uploads/2020/02/image-2.png");
+  background-image: url("~/assets/img/banner.jpg");
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 55% auto;
+  background-size: 100% auto;
 }
 .elementor-498 .elementor-element.elementor-element-46086e6e {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -2157,6 +2157,7 @@
   .elementor-spacer-inner {
   height: 50px;
 }
+/* .elementor-498 .elementor-element.elementor-element-5d4d579 .elementskit-section-title-wraper .elementskit-section-title{ color: #f44336;} */
 @media (max-width: 1024px) {
   .elementor-498
     .elementor-element.elementor-element-46086e6e:not(.elementor-motion-effects-element-type-background),
@@ -2245,6 +2246,7 @@
   }
 }
 @media (max-width: 767px) {
+  .nav-menu-container.active{ display: block!important;}
   .elementor-498 .elementor-element.elementor-element-5151d31 {
     margin-top: 3px;
     margin-bottom: -25px;
@@ -2302,11 +2304,15 @@
     .elementor-element.elementor-element-46086e6e
     > .elementor-motion-effects-container
     > .elementor-motion-effects-layer {
-    background-size: 234px auto;
+    background-size: 100% 100%;
   }
   .elementor-498 .elementor-element.elementor-element-46086e6e {
-    padding: 100px 0px 0px 0px;
+    padding: 23px 0px 0px 0px;
   }
+  .elementor-498 .elementor-element.elementor-element-5d4d579 .elementskit-section-title-wraper .elementskit-section-title[data-v-2a183b29] {
+    color: #fff;}
+    .elementor-498 .elementor-element.elementor-element-5d4d579 .elementskit-section-title-wraper p[data-v-2a183b29] {
+      color: #fff;}
   .elementor-498
     .elementor-element.elementor-element-5d4d579
     .elementskit-section-title-wraper
@@ -2789,6 +2795,9 @@
   .elementor-498 .elementor-element.elementor-element-7ec9a14b {
     width: 35.612%;
   }
+  .elementor-498 .elementor-element.elementor-element-46086e6e{
+    padding: 25px 0px 0px 0px!important;
+}
 }
 @media (max-width: 1024px) and (min-width: 768px) {
   .elementor-498 .elementor-element.elementor-element-5ce262d6 {
@@ -2910,3 +2919,4 @@
     background-attachment: fixed;
   }
 }
+.img-icons{ width: 90px;}
