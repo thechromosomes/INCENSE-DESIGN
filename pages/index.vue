@@ -390,7 +390,7 @@
                                 "
                               >
                                 <div class="elementor-widget-wrap">
-                                  <div
+                                  <div 
                                     class="
                                       elementor-element
                                       elementor-element-58648245
