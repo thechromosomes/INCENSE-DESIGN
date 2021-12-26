@@ -32,11 +32,11 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  target: 'static' // default is 'server'
+  // target: 'static', // default is 'server'
 
   // dynamic port configuration
-  // server: {
-  //   port: process.env.PORT || 8000, // default: 3000
-  //   // host: "0.0.0.0", // default: localhost
-  // },
+  server: {
+    port: process.env.PORT || 3001, // default: 3000
+    // host: "0.0.0.0", // default: localhost
+  },
 };
