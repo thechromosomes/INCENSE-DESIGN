@@ -6,6 +6,27 @@ License: https://webthemez.com/license
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/* for the query bouncing animation */
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* end of the bouncing animation */
+
 body {
   background: #fff;
   color: #444;
@@ -15,6 +36,7 @@ body {
 a {
   color: #e91e63;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 a:hover,
@@ -41,6 +63,13 @@ h6 {
   margin: 0 0 20px 0;
   padding: 0;
 }
+
+/* main home page banner */
+
+.mainBanner img {
+  width: 100%;
+}
+/* end main home page button */
 
 /* Back to top button */
 .back-to-top {
