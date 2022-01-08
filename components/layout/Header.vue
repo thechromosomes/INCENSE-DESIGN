@@ -1,13 +1,18 @@
 <template>
   <div id="header">
     <div class="container">
-      <div id="logo" class="pull-left">
+      <!-- <div id="logo" class="pull-left">
         <h4>
           <span
             ><i class="fa fa-align-center" @click="openMenu = !openMenu"></i
           ></span>
           <a href="/" class="scrollto"> INCENSE DESIGN</a>
         </h4>
+      </div> -->
+      <div id="logo" class="pull-left">
+        <NuxtLink to="/" class="scrollto">
+          <img src="@/static/logo.png"
+        /></NuxtLink>
       </div>
 
       <nav id="nav-menu-container" :class="{ active: openMenu }">

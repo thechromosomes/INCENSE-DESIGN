@@ -3,7 +3,7 @@
     <!-- main banner -->
     <div class="mainBanner">
       <span>
-      <img src="@/static/IDMainBanner.gif" />
+        <img src="@/static/IDMainBanner.gif" />
       </span>
     </div>
     <!-- main banner en -->
@@ -33,19 +33,17 @@
       >
         <div class="elementor-inner">
           <div class="elementor-section-wrap">
-            <Card :payload="interiorDesign" />
+            <Card :payload="FirstSection" />
 
-            <Card :payload="interiorDesign" />
-
-            <Card :payload="interiorDesign" />
-
-            <Card :payload="interiorDesign" />
-
-            <Card :payload="interiorDesign" />
-
-            <Card :payload="interiorDesign" />
+            <Card :payload="SecondSection" />
 
             <ProgressContent />
+
+            <Card :payload="ThirdSection" />
+
+            <HappyCustomer />
+
+            <OurPartners />
 
             <section class="bottomStickBotton">
               <a href="https://wa.me/message/9988998898" target="blank"
@@ -62,16 +60,28 @@
 <script>
 import Card from "@/components/layout/Card.vue";
 import ProgressContent from "@/components/layout/progressContent.vue";
-import { interiorDesign } from "@/HomePageData/index";
+import HappyCustomer from "@/components/layout/HappyCustomer.vue";
+import OurPartners from "@/components/layout/OurPartners.vue";
+
+
+import {
+  FirstSection,
+  SecondSection,
+  ThirdSection,
+} from "@/HomePageData/index";
 export default {
   components: {
     Card,
     ProgressContent,
+    HappyCustomer,
+    OurPartners
   },
 
   data() {
     return {
-      interiorDesign: interiorDesign,
+      ThirdSection: ThirdSection,
+      FirstSection: FirstSection,
+      SecondSection: SecondSection,
     };
   },
   head() {
