@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      class="
+      class="progress-bar-div
         elementor-section
         elementor-inner-section
         elementor-element
@@ -158,7 +158,7 @@
       </div>
     </section>
     <section
-      class="
+      class=" progress-btn
         elementor-section
         elementor-inner-section
         elementor-element
@@ -201,7 +201,7 @@
             data-element_type="column"
           >
             <div class="elementor-column-wrap elementor-element-populated">
-              <div class="elementor-widget-wrap">
+              <div class="elementor-widget-wrap ">
                 <div
                   class="
                     elementor-element
@@ -283,7 +283,7 @@
             data-element_type="column"
           >
             <div class="elementor-column-wrap elementor-element-populated">
-              <div class="elementor-widget-wrap">
+              <div class="elementor-widget-wrap chutya-btn">
                 <div
                   class="
                     elementor-element elementor-element-72c77a4c

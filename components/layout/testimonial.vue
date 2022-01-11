@@ -2,13 +2,18 @@
   <div>
     <div class="container">
      
-      <section class="customer-logos slider">
-         <h2>Our Partners</h2>
+      <section class="customer-logos slider testimonial">
+         <h2>Happy Customers</h2>
         <Slick :options="slickOptions">
           <div class="slide" v-for="(item, index) in 9" :key="index">
+              <div class="card_item_testi">
             <img
-              src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
-            />
+              src="~/assets/img/man.png" alt="man">
+        
+            <h2>Rahul Bhatnagar</h2>
+            <p>Very high quality plywoods with many designs. Also, they are very experienced in interior designing, submitting the projects on time. Also, the nature of the owner is very friendly.</p>
+            <p></p>
+              </div>
           </div>
         </Slick>
       </section>
@@ -24,24 +29,25 @@ export default {
   data() {
     return {
       slickOptions: {
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
         arrows: false,
-        dots: false,
+        dots: true,
         pauseOnHover: false,
+        infinite:false,
         responsive: [
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 2,
             },
           },
           {
             breakpoint: 520,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1,
             },
           },
         ],
@@ -63,7 +69,7 @@ h2 {
 }
 
 .slick-slide img {
-  width: 100%;padding: 10px;
+  width: 100px; border-radius: 100%; margin:  0 auto;
 }
 
 .slick-slider {
@@ -158,7 +164,16 @@ h2 {
 .customer-logos.slider h2{text-transform: capitalize;
     color: #323850;
     font-family: "Lato", Sans-serif;
-    font-size: 48px;
+    font-size: 46px;
     font-weight: bold}
+    .card_item_testi h2{font-size: 19px!important;}
     .customer-logos.slider{ padding: 60px 0px 0px 0px;}
+    .card_item_testi{ background-color: #fff; margin-right: 20px;padding: 20px;border:1px solid rgb(204 204 204 / 19%);}
+    .testimonial{ margin-bottom: 70px;}
+    
+.testimonial p {
+    color: #8c8c8c;
+    font-weight: 600;
+    letter-spacing: 0px; text-align: center;
+}
 </style>

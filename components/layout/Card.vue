@@ -1,7 +1,7 @@
 <template>
   <section
     v-if="payload && payload.data.length"
-    class="
+    class=" why-choose
       elementor-section
       elementor-top-section
       elementor-element
@@ -101,7 +101,7 @@
                 </div>
               </section>
               <section
-                class="
+                class=" cards-section
                   elementor-section
                   elementor-inner-section
                   elementor-element
@@ -115,17 +115,13 @@
               >
                 <div class="elementor-container elementor-column-gap-extended">
                   <div
-                    class="elementor-row"
+                    class="elementor-row cart-width"
                     v-for="(item, index) in payload.data"
                     :key="index"
                   >
                     <div
                       class="
-                        elementor-column
-                        elementor-col-25
-                        elementor-inner-column
-                        elementor-element
-                        elementor-element-30cca61b
+                        
                       "
                       data-id="30cca61b"
                       data-element_type="column"

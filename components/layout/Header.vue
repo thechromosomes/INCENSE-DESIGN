@@ -32,6 +32,8 @@
           </li>
         </ul>
       </nav>
+      
+      <img src="~/assets/img/menu.png" alt="menu" class="mobile-toogle" @click="openMenu =! openMenu" >
       <!-- #nav-menu-container -->
 
       <!-- query pop up for all query buttons -->
@@ -64,7 +66,7 @@ export default {
 #nav-menu-container {
   margin-top: 27px;
 }
-
+.mobile-toogle{ display: none;}
 @media (max-width: 767px) {
   #nav-menu-container.active {
     display: block !important;
@@ -74,5 +76,6 @@ export default {
     text-align: center;
     margin-top: 10px;
   }
+  .mobile-toogle{ display: inline-block;width: 41px;position: absolute; right: 15px;}
 }
 </style>

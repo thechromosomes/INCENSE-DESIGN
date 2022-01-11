@@ -183,7 +183,7 @@ h6 {
   position: fixed;
   width: 100%;
   padding: 10px;
-  padding-bottom: 0;
+
   top: 0;
 }
 
@@ -912,6 +912,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   #testimonials .testimonial-item {
     margin: 30px 10px;
   }
+  #logo img {
+    width: 83px !important;
+}
+.main-banner-text{ width: 100%;}
+.main-banner-text .ekit-heading--title.elementskit-section-title {
+  font-size: 28px;}
 }
 
 #testimonials .testimonial-item .testimonial-img {

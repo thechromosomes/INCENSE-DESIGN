@@ -5,6 +5,12 @@
       <span>
         <img src="@/static/IDMainBanner.gif" />
       </span>
+      <div class="main-banner-text">
+        <strong class="elementskit-section-subtitle  ">Interiors Made Easy</strong>
+        <h2 class="ekit-heading--title elementskit-section-title ">INCENSE DESIGN</h2>
+        <small>Delivery in 45 Days</small>
+        <a class="elementskit-btn  whitespace--normal thisButtonWillOpenTheQueryPopUp" @click.prevent="togglePopUp">Get Free Estimate</a>
+      </div>
     </div>
     <!-- main banner en -->
     <div
@@ -36,7 +42,7 @@
             <Card :payload="FirstSection" />
 
             <Card :payload="SecondSection" />
-
+            <testimonial/>
             <ProgressContent />
 
             <Card :payload="ThirdSection" />
@@ -54,27 +60,33 @@
         </div>
       </div>
     </div>
+    <transition name="bounce">
+        <QueryPopUp v-if="$store.state.queryUpPopUp" />
+      </transition>
+        <div class="fix-button elementskit-btn  whitespace--normal thisButtonWillOpenTheQueryPopUp" @click="togglePopUp"><p>Get Free Estimate</p></div>
   </div>
 </template>
 
 <script>
 import Card from "@/components/layout/Card.vue";
+import testimonial from "@/components/layout/testimonial.vue";
 import ProgressContent from "@/components/layout/progressContent.vue";
 import HappyCustomer from "@/components/layout/HappyCustomer.vue";
 import OurPartners from "@/components/layout/OurPartners.vue";
-
+import QueryPopUp from "@/components/layout/queryPopUp.vue";
 
 import {
   FirstSection,
   SecondSection,
   ThirdSection,
+  
 } from "@/HomePageData/index";
 export default {
   components: {
     Card,
-    ProgressContent,
+    ProgressContent,testimonial,
     HappyCustomer,
-    OurPartners
+    OurPartners, QueryPopUp     ,
   },
 
   data() {
@@ -84,7 +96,17 @@ export default {
       SecondSection: SecondSection,
     };
   },
+
+   methods: {
+    togglePopUp() {
+      this.$store.commit("setQueryUpPopUp", {
+        status: false,
+      });
+    },
+  },
+ 
   head() {
+    
     return {
       title: "this.title",
       meta: [
@@ -111,6 +133,7 @@ export default {
       ],
     };
   },
+  
 };
 </script>
 
@@ -120,4 +143,5 @@ export default {
 @import url("@/assets/css/post-498.css");
 
 @import url("@/assets/css/widget-styles.css");
+
 </style>

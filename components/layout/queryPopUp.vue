@@ -198,8 +198,8 @@ h2 {
 }
 .popup.active {
   top: 0;
-  background-color: rgba(3, 3, 3, 0.98);
-  transition: background-color 0.6s, opacity 0.6s;
+  background-color: #030303a6;
+  transition: background-color 0.6s, opacity 0.6s;left: 0;
 }
 .popup .main-btn-rect {
   padding: 10px 100px;
@@ -258,7 +258,7 @@ form#send textarea {
   border-bottom: 1px solid #070000;
   -webkit-transition: border 0.6s;
   -o-transition: border 0.6s;
-  transition: border 0.6s;
+  transition: border 0.6s;padding-left: 20px;
 }
 form#send input:focus,
 form#send textarea:focus {
@@ -270,7 +270,7 @@ form#send label {
   line-height: 28px;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
-  transition: color 0.5s;
+  transition: color 0.5s;left: 0; font-size: 20px ;
 }
 form#send input:focus + label,
 form#send textarea:focus + label {

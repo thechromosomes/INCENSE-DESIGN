@@ -1,25 +1,27 @@
 <template>
   <div>
+    <div class="cool-effect-div">
     <div class="container-fluid text-center">
       <h1>Some cool facts</h1>
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-6">
           <i class="fa fa-user"></i>
-          <h2 data-max="50">+ Happy Customers</h2>
+          <h2><span data-max="50" class="no-count"></span>+ Happy Customers</h2>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-6">
           <i class="fa fa-code"></i>
-          <h2 data-max="25000">+ Resources</h2>
+          <h2> <span data-max="250" class="no-count"></span>+ Resources</h2>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-6">
           <i class="fa fa-lock"></i>
-          <h2 data-max="10">+ Projects</h2>
+          <h2> <span data-max="10" class="no-count"></span>+ Projects</h2>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-6">
           <i class="fa fa-briefcase"></i>
-          <h2 data-max="30" id="test">+ Developers</h2>
+          <h2  id="test"> <span data-max="30" class="no-count"></span>+ Developers</h2>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -74,7 +76,7 @@ export default {
       $(window).scroll(function () {
         //Checking if each items to animate are
         //visible in the viewport
-        $("h2[data-max]").each(function () {
+        $("h2 span[data-max]").each(function () {
           inVisible($(this));
         });
       });
@@ -91,13 +93,19 @@ i {
   color: #f44436;
 }
 
-h1 {
-  padding-top: 30px;
-  color: white !important;
+.cool-effect-div h1{text-transform: capitalize;
+    color: #323850;
+    font-family: "Lato", Sans-serif;
+    font-size: 48px;
+    font-weight: bold;}
+    .cool-effect-div h2{ font-weight: 600;}
+    .no-count{
+    display: block;
+    font-size: 31px;
+    color: #444;
 }
-
-h2 {
-  color: rgb(3, 4, 4);
+    .cool-effect-div h2 {
+    font-weight: 600;
+    font-size: 22px;padding-top: 25px;
 }
-
 </style>

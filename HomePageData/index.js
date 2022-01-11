@@ -52,7 +52,7 @@ export const interiorDesign = {
 };
 
 export const FirstSection = {
-  title: "Why Choose Easy Incense Design",
+  title: "Why Choose Us",
   data: [
     {
       title: "Innovative Designs",
@@ -94,7 +94,7 @@ export const FirstSection = {
 
 
 export const SecondSection = {
-  title: "Complete Interior Solutions at One Place",
+  title: "Complete Interior Solutions ",
   data: [
     {
       title: "Modular Kitchen",
@@ -174,6 +174,13 @@ export const ThirdSection = {
     },
     {
       title: "Design",
+      description:
+        "InterDesign is a design agency that specializes in Interior designing",
+      image: require("./images/decorating.png"),
+      link: "#",
+    },
+    {
+      title: "Planning",
       description:
         "InterDesign is a design agency that specializes in Interior designing",
       image: require("./images/idea.png"),
