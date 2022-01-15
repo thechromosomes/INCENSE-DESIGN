@@ -1,7 +1,8 @@
 <template>
   <section
     v-if="payload && payload.data.length"
-    class=" why-choose
+    class="
+      why-choose
       elementor-section
       elementor-top-section
       elementor-element
@@ -101,7 +102,8 @@
                 </div>
               </section>
               <section
-                class=" cards-section
+                class="
+                  cards-section
                   elementor-section
                   elementor-inner-section
                   elementor-element
@@ -119,13 +121,7 @@
                     v-for="(item, index) in payload.data"
                     :key="index"
                   >
-                    <div
-                      class="
-                        
-                      "
-                      data-id="30cca61b"
-                      data-element_type="column"
-                    >
+                    <div class="" data-id="30cca61b" data-element_type="column">
                       <div
                         class="
                           elementor-column-wrap elementor-element-populated
@@ -181,11 +177,21 @@
         </div>
       </div>
     </div>
+    <div class="queryPopUpButton">
+      <a @click.prevent="togglePopUp()">Get Free Quote</a>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
   props: ["payload"],
+  methods: {
+    togglePopUp() {
+      this.$store.commit("setQueryUpPopUp", {
+        status: true,
+      });
+    },
+  },
 };
 </script>

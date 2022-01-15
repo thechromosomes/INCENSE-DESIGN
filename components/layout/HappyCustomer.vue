@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-sm-3 col-6">
           <i class="fa fa-user"></i>
-          <h2><span data-max="50" class="no-count"></span>+ Happy Customers</h2>
+          <h2><span data-max="83" class="no-count"></span>+ Happy Customers</h2>
         </div>
         <div class="col-sm-3 col-6">
           <i class="fa fa-code"></i>
@@ -14,11 +14,11 @@
         </div>
         <div class="col-sm-3 col-6">
           <i class="fa fa-lock"></i>
-          <h2> <span data-max="10" class="no-count"></span>+ Projects</h2>
+          <h2> <span data-max="24" class="no-count"></span>+ Projects</h2>
         </div>
         <div class="col-sm-3 col-6">
           <i class="fa fa-briefcase"></i>
-          <h2  id="test"> <span data-max="30" class="no-count"></span>+ Developers</h2>
+          <h2  id="test"> <span data-max="23" class="no-count"></span>+ Developers</h2>
         </div>
       </div>
     </div>

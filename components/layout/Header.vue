@@ -1,14 +1,7 @@
 <template>
   <div id="header">
+    <Loader v-show="$store.state.pageLoader" />
     <div class="container">
-      <!-- <div id="logo" class="pull-left">
-        <h4>
-          <span
-            ><i class="fa fa-align-center" @click="openMenu = !openMenu"></i
-          ></span>
-          <a href="/" class="scrollto"> INCENSE DESIGN</a>
-        </h4>
-      </div> -->
       <div id="logo" class="pull-left">
         <NuxtLink to="/" class="scrollto">
           <img src="@/static/logo.png"
@@ -17,23 +10,30 @@
 
       <nav id="nav-menu-container" :class="{ active: openMenu }">
         <ul class="nav-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/aboutUs">About Us</a></li>
-          <li><a href="contactUs">Contact</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li>
+          <li><NuxtLink to="/services">Services</NuxtLink></li>
+          <li><NuxtLink to="/aboutUs">About Us</NuxtLink></li>
+          <li><NuxtLink to="/contactUs">Contact</NuxtLink></li>
+          <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
+          <!-- <li>
             <a
               @click.prevent="togglePopUp()"
               style="background-color: #f44336; color: #fff"
               class="thisButtonWillOpenTheQueryPopUp"
               >Yes! We Are Available</a
             >
+          </li> -->
+          <li>
+            <a href="tel:+8588880111" class="Blondie"> Call me </a>
           </li>
         </ul>
       </nav>
-      
-      <img src="~/assets/img/menu.png" alt="menu" class="mobile-toogle" @click="openMenu =! openMenu" >
+
+      <img
+        src="~/assets/img/menu.png"
+        alt="menu"
+        class="mobile-toogle"
+        @click="openMenu = !openMenu"
+      />
       <!-- #nav-menu-container -->
 
       <!-- query pop up for all query buttons -->
@@ -45,9 +45,10 @@
 </template>
 <script>
 import QueryPopUp from "@/components/layout/queryPopUp.vue";
+import Loader from "@/components/layout/Loader.vue";
 
 export default {
-  components: { QueryPopUp },
+  components: { QueryPopUp, Loader },
   data() {
     return {
       openMenu: false,
@@ -66,7 +67,9 @@ export default {
 #nav-menu-container {
   margin-top: 27px;
 }
-.mobile-toogle{ display: none;}
+.mobile-toogle {
+  display: none;
+}
 @media (max-width: 767px) {
   #nav-menu-container.active {
     display: block !important;
@@ -76,6 +79,11 @@ export default {
     text-align: center;
     margin-top: 10px;
   }
-  .mobile-toogle{ display: inline-block;width: 41px;position: absolute; right: 15px;}
+  .mobile-toogle {
+    display: inline-block;
+    width: 41px;
+    position: absolute;
+    right: 15px;
+  }
 }
 </style>

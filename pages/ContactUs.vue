@@ -1,16 +1,17 @@
 <template>
   <div>
     <section id="contact">
-      <h1 class="section-header">Contact</h1>
+      <p class="section-header">Contact</p>
 
       <div class="contact-wrapper">
         <!-- Left contact page -->
 
-        <form id="contact-form" class="form-horizontal" role="form">
+        <div id="contact-form" class="form-horizontal" role="form">
           <div class="form-group">
             <div class="col-sm-12">
               <input
                 type="text"
+                v-model="user.name"
                 class="form-control"
                 id="name"
                 placeholder="NAME"
@@ -24,7 +25,23 @@
           <div class="form-group">
             <div class="col-sm-12">
               <input
+                type="number"
+                v-model="user.phone"
+                class="form-control"
+                id="number"
+                placeholder="NUMBER"
+                name="number"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input
                 type="email"
+                v-model="user.email"
                 class="form-control"
                 id="email"
                 placeholder="EMAIL"
@@ -39,6 +56,7 @@
             class="form-control"
             rows="10"
             placeholder="MESSAGE"
+            v-model="user.message"
             name="message"
             required
           ></textarea>
@@ -49,12 +67,12 @@
             type="submit"
             value="SEND"
           >
-            <div class="alt-send-button">
+            <div class="alt-send-button" @click="sendMail('contact')" >
               <i class="fa fa-paper-plane"></i
               ><span class="send-text">SEND</span>
             </div>
           </button>
-        </form>
+        </div>
 
         <!-- Left contact page -->
 
@@ -69,8 +87,8 @@
             <li class="list-item">
               <i class="fa fa-phone fa-2x"
                 ><span class="contact-text phone"
-                  ><a href="tel:1-212-555-5555" title="Give me a call"
-                    >(212) 555-2368</a
+                  ><a href="tel:8588880111" title="Give me a call"
+                    >8588880111</a
                   ></span
                 ></i
               >
@@ -79,8 +97,10 @@
             <li class="list-item">
               <i class="fa fa-envelope fa-2x"
                 ><span class="contact-text gmail"
-                  ><a href="mailto:#" title="Send me an email"
-                    >hitmeup@gmail.com</a
+                  ><a
+                    href="mailto:Contact@incensedesign.com"
+                    title="Send me an email"
+                    >Contact@incensedesign.com</a
                   ></span
                 ></i
               >
@@ -89,16 +109,6 @@
 
           <hr />
           <ul class="social-media-list">
-            <li>
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-github" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-codepen" aria-hidden="true"></i
-              ></a>
-            </li>
             <li>
               <a href="#" target="_blank" class="contact-icon">
                 <i class="fa fa-twitter" aria-hidden="true"></i
@@ -119,9 +129,79 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: "Contact us",
+    };
+  },
+
+  data() {
+    return {
+      user: {},
+    };
+  },
+
+  methods: {
+    togglePopUp() {
+      this.$store.commit("setQueryUpPopUp", {
+        status: false,
+      });
+    },
+
+    async sendMail(type) {
+      let form = {
+        name: this.user.name,
+        email: this.user.email,
+        phone: this.user.phone,
+        location: this.user.location,
+        message: this.user.message,
+        emailType: type,
+        startDate: this.user.startDate,
+        endDate: this.user.endDate,
+        person: this.user.person,
+      };
+
+      if (!form.phone) {
+        this.$swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Please fill the form first!",
+          timer: 10000,
+        });
+        return;
+      }
+
+      let response = await this.$store.dispatch("ApiCall", {
+        method: "post",
+        url: `/sendmail`,
+        params: form,
+      });
+
+      if (response.status) {
+        this.$swal.fire({
+          icon: "success",
+          timer: 10000,
+          title: "Voila!",
+          text: "Message sent successfully, expect a reply soon",
+        });
+        this.user = {};
+      } else {
+        this.$swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!",
+          timer: 10000,
+          text: "Message sent successfully, expect a reply soon",
+        });
+      }
+    },
+  },
+};
+</script>
+
 <style scoped>
-
-
 #contact {
   width: 100%;
   height: 100%;
@@ -130,9 +210,8 @@
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px "Oswald", sans-serif;
-  color: #fff;
+  font: 300 40px "Oswald", sans-serif;
+  color: rgb(218, 29, 29);
   text-transform: uppercase;
   letter-spacing: 6px;
 }
@@ -208,7 +287,7 @@ textarea {
 .contact-text {
   font: 300 18px "Lato", sans-serif;
   letter-spacing: 1.9px;
-  color: #bbb;
+  color: #f44436;
 }
 
 .place {
@@ -224,13 +303,13 @@ textarea {
 }
 
 .contact-text a {
-  color: #bbb;
+  color: #f44436;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
 .contact-text a:hover {
-  color: #fff;
+  color: #36c1f4;
   text-decoration: none;
 }
 

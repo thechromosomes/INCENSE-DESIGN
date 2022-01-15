@@ -1,30 +1,18 @@
 <template>
   <div>
-    <h1>Take a chance</h1>
-    <h2>
-      "Because you will never know how absolutely perfect something could turn
-      out to be"
-    </h2>
-    <button
-      type="button"
-      class="main-btn-rect thisButtonWillOpenTheQueryPopUp"
-      data-popup="popup-reg"
-    >
-      Click me
-    </button>
     <div id="popup-reg" class="popup active">
       <div class="popup-content">
         <div class="event-header">
           <h6>Don't be shy, say hi!</h6>
         </div>
-        <form id="send" class="send-form">
+        <div id="send" class="send-form">
           <div class="form-group">
             <input
               type="text"
+              v-model="user.name"
               placeholder="Enter name..."
               id="name"
               name="name"
-              required="required"
             />
             <label for="name">
               <i class="fa fa-user"></i>
@@ -33,10 +21,10 @@
           <div class="form-group">
             <input
               type="tel"
+              v-model="user.phone"
               placeholder="Enter phone..."
               id="phone"
               name="phone"
-              required="required"
             />
             <label for="phone">
               <i class="fa fa-phone"></i>
@@ -45,10 +33,10 @@
           <div class="form-group">
             <input
               type="email"
+              v-model="user.email"
               placeholder="Enter mail..."
               id="mail"
               name="mail"
-              required="required"
             />
             <label for="mail">
               <i class="fa fa-envelope"></i>
@@ -58,16 +46,23 @@
             <textarea
               placeholder="Enter message..."
               name="text"
+              v-model="user.message"
               id="text"
             ></textarea>
             <label for="text" class="txt">
               <i class="fa fa-commenting"></i>
             </label>
           </div>
-          <button type="submit" class="main-btn-rect" name="text" value="Send">
+          <button
+            type="submit"
+            class="main-btn-rect"
+            name="text"
+            @click="sendMail('contact')"
+            value="Send"
+          >
             <i class="fa fa-paper-plane"></i>Send
           </button>
-        </form>
+        </div>
         <span class="fade-out main-btn-circle" @click="togglePopUp()">╳</span>
       </div>
     </div>
@@ -77,7 +72,16 @@
 export default {
   head() {
     return {
-     title: "your query"
+      title: "your query",
+      bodyAttrs: {
+        class: "overFlowHidden"
+      },
+    };
+  },
+
+  data() {
+    return {
+      user: {},
     };
   },
 
@@ -87,12 +91,60 @@ export default {
         status: false,
       });
     },
+
+    async sendMail(type) {
+      let form = {
+        name: this.user.name,
+        email: this.user.email,
+        phone: this.user.phone,
+        location: this.user.location,
+        message: this.user.message,
+        emailType: type,
+        startDate: this.user.startDate,
+        endDate: this.user.endDate,
+        person: this.user.person,
+      };
+
+      if (!form.phone) {
+        this.$swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Please fill the form first!",
+          timer: 10000,
+        });
+        return;
+      }
+
+      let response = await this.$store.dispatch("ApiCall", {
+        method: "post",
+        url: `/sendmail`,
+        params: form,
+      });
+
+      if (response.status) {
+        this.$swal.fire({
+          icon: "success",
+          timer: 10000,
+          title: "Voila!",
+          text: "Message sent successfully, expect a reply soon",
+        });
+        this.user = {};
+        this.togglePopUp();
+      } else {
+        this.$swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!",
+          timer: 10000,
+          text: "Message sent successfully, expect a reply soon",
+        });
+      }
+    },
   },
 };
 </script>
 
 <style scoped>
-
 body {
   margin: 0;
   padding: 0;
@@ -102,7 +154,6 @@ body {
   background: #00c6ff;
   background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
   background: linear-gradient(to right, #0072ff, #00c6ff);
-  overflow: hidden;
 }
 button {
   text-decoration: none;
@@ -194,12 +245,13 @@ h2 {
   top: 100%;
   width: 100%;
   height: 100%;
-  z-index: 10001;
+  z-index: 99;
 }
 .popup.active {
   top: 0;
   background-color: #030303a6;
-  transition: background-color 0.6s, opacity 0.6s;left: 0;
+  transition: background-color 0.6s, opacity 0.6s;
+  left: 0;
 }
 .popup .main-btn-rect {
   padding: 10px 100px;
@@ -244,8 +296,8 @@ h2 {
   width: 90%;
   margin: 0px auto;
 }
-form#send input,
-form#send textarea {
+div#send input,
+div#send textarea {
   position: relative;
   margin-bottom: 32px;
   width: 100%;
@@ -258,36 +310,39 @@ form#send textarea {
   border-bottom: 1px solid #070000;
   -webkit-transition: border 0.6s;
   -o-transition: border 0.6s;
-  transition: border 0.6s;padding-left: 20px;
+  transition: border 0.6s;
+  padding-left: 20px;
 }
-form#send input:focus,
-form#send textarea:focus {
+div#send input:focus,
+div#send textarea:focus {
   border-bottom: 1px solid rgb(63, 173, 168);
 }
-form#send label {
+div#send label {
   position: absolute;
   top: 0;
   line-height: 28px;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
-  transition: color 0.5s;left: 0; font-size: 20px ;
+  transition: color 0.5s;
+  left: 0;
+  font-size: 20px;
 }
-form#send input:focus + label,
-form#send textarea:focus + label {
+div#send input:focus + label,
+div#send textarea:focus + label {
   color: rgb(63, 173, 168);
 }
-form#send .txt {
+div#send .txt {
   line-height: 22px;
   left: 2px;
 }
-form#send .main-btn-rect {
+div#send .main-btn-rect {
   position: relative;
   display: block;
   padding: 12px 80px;
   margin: 0px auto;
   font-size: 14px;
 }
-form#send .main-btn-rect i {
+div#send .main-btn-rect i {
   margin-right: 5px;
 }
 .popup .fade-out {
@@ -396,7 +451,7 @@ form#send .main-btn-rect i {
   h2 {
     font-size: 14px;
   }
-  form#send .main-btn-rect {
+  div#send .main-btn-rect {
     padding: 7px 60px;
     font-size: 14px;
   }

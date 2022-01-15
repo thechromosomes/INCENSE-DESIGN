@@ -38,6 +38,16 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  plugins: [
+    { src: "~/plugins/jsonld", defer: true },
+    { src: "@plugins/toast", mode: "client" },
+  ],
+
+  modules: ["@nuxtjs/axios"],
+
+  // server  middleware for back end api
+  // a server middleware that runs only server site
+  serverMiddleware: ["~/server-middleware/sendMail"],
   // target: 'static', // default is 'server'
 
   // dynamic port configuration

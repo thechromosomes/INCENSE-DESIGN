@@ -1,9 +1,8 @@
 <template>
   <div>
     <div class="container">
-     
       <section class="customer-logos slider">
-         <h2>Our Partners</h2>
+        <h2>Our Partners</h2>
         <Slick :options="slickOptions">
           <div class="slide" v-for="(item, index) in 9" :key="index">
             <img
@@ -63,7 +62,8 @@ h2 {
 }
 
 .slick-slide img {
-  width: 100%;padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
 
 .slick-slider {
@@ -155,10 +155,14 @@ h2 {
 .slick-arrow.slick-hidden {
   display: none;
 }
-.customer-logos.slider h2{text-transform: capitalize;
-    color: #323850;
-    font-family: "Lato", Sans-serif;
-    font-size: 48px;
-    font-weight: bold}
-    .customer-logos.slider{ padding: 60px 0px 0px 0px;}
+.customer-logos.slider h2 {
+  text-transform: capitalize;
+  color: #323850;
+  font-family: "Lato", Sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+.customer-logos.slider {
+  padding: 60px 0px 0px 0px;
+}
 </style>

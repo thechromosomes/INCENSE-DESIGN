@@ -6,10 +6,22 @@
         <img src="@/static/IDMainBanner.gif" />
       </span>
       <div class="main-banner-text">
-        <strong class="elementskit-section-subtitle  ">Interiors Made Easy</strong>
-        <h2 class="ekit-heading--title elementskit-section-title ">INCENSE DESIGN</h2>
+        <strong class="elementskit-section-subtitle"
+          >Interiors Made Easy</strong
+        >
+        <h2 class="ekit-heading--title elementskit-section-title">
+          INCENSE DESIGN
+        </h2>
         <small>Delivery in 45 Days</small>
-        <a class="elementskit-btn  whitespace--normal thisButtonWillOpenTheQueryPopUp" @click.prevent="togglePopUp">Get Free Estimate</a>
+        <a
+          class="
+            elementskit-btn
+            whitespace--normal
+            thisButtonWillOpenTheQueryPopUp
+          "
+          @click.prevent="togglePopUp"
+          >Get Free Estimate</a
+        >
       </div>
     </div>
     <!-- main banner en -->
@@ -42,12 +54,14 @@
             <Card :payload="FirstSection" />
 
             <Card :payload="SecondSection" />
-            <testimonial/>
-            <ProgressContent />
+
+            <Testimonial />
 
             <Card :payload="ThirdSection" />
 
             <HappyCustomer />
+
+            <Instagram />
 
             <OurPartners />
 
@@ -60,33 +74,40 @@
         </div>
       </div>
     </div>
-    <transition name="bounce">
-        <QueryPopUp v-if="$store.state.queryUpPopUp" />
-      </transition>
-        <div class="fix-button elementskit-btn  whitespace--normal thisButtonWillOpenTheQueryPopUp" @click="togglePopUp"><p>Get Free Estimate</p></div>
+
+    <div
+      class="
+        fix-button
+        elementskit-btn
+        whitespace--normal
+        thisButtonWillOpenTheQueryPopUp
+      "
+      @click="togglePopUp"
+    >
+      <p>Get Free Estimate</p>
+    </div>
   </div>
 </template>
 
 <script>
 import Card from "@/components/layout/Card.vue";
-import testimonial from "@/components/layout/testimonial.vue";
-import ProgressContent from "@/components/layout/progressContent.vue";
+import Testimonial from "@/components/layout/testimonial.vue";
 import HappyCustomer from "@/components/layout/HappyCustomer.vue";
 import OurPartners from "@/components/layout/OurPartners.vue";
-import QueryPopUp from "@/components/layout/queryPopUp.vue";
+import Instagram from "@/components/layout/Instagram.vue";
 
 import {
   FirstSection,
   SecondSection,
   ThirdSection,
-  
 } from "@/HomePageData/index";
 export default {
   components: {
     Card,
-    ProgressContent,testimonial,
+    Testimonial,
     HappyCustomer,
-    OurPartners, QueryPopUp     ,
+    OurPartners,
+    Instagram,
   },
 
   data() {
@@ -97,16 +118,15 @@ export default {
     };
   },
 
-   methods: {
+  methods: {
     togglePopUp() {
       this.$store.commit("setQueryUpPopUp", {
         status: false,
       });
     },
   },
- 
+
   head() {
-    
     return {
       title: "this.title",
       meta: [
@@ -133,7 +153,6 @@ export default {
       ],
     };
   },
-  
 };
 </script>
 
@@ -143,5 +162,4 @@ export default {
 @import url("@/assets/css/post-498.css");
 
 @import url("@/assets/css/widget-styles.css");
-
 </style>

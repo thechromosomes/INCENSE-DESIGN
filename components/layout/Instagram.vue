@@ -1,0 +1,217 @@
+<template>
+  <div class="container mainContainer">
+    <!-- instagram @ -->
+    <div class="instagram-section">
+      <h3 class="title">@IncenseDesign</h3>
+      <div class="slider-wrapper slider_box slider_arrow">
+        <VueSlickCarousel ref="slick" :options="settingsInsta">
+          <div class="item" v-for="(image, imgIndex) in 9" :key="imgIndex">
+            <div class="img-box">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="img"
+                class="w-100"
+              />
+              <div class="overlaey"></div>
+            </div>
+          </div>
+        </VueSlickCarousel>
+      </div>
+      <div class="b-flowbox-body">
+        <p>
+          Tag your pictures with <b>@IncenseDesign</b> and appear at our feed!
+        </p>
+      </div>
+    </div>
+    <!-- instagram @ end -->
+  </div>
+</template>
+
+<script>
+import VueSlickCarousel from "vue-slick";
+
+export default {
+  components: { VueSlickCarousel },
+  data() {
+    return {
+      settingsInsta: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        draggable: true,
+        infinite: false,
+        autoplay: true,
+
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      },
+    };
+  },
+};
+</script>
+
+<style scoped>
+.mainContainer {
+  margin-top: 30px;
+}
+.b-flowbox-body {
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+  margin: 10px auto;
+  text-align: center;
+}
+.b-flowbox-body p {
+  margin: 20px 0;
+}
+.b-flowbox-body b {
+  color: #f44436;
+}
+.instagram-section .slider-wrapper .slick-initialized .slick-slide {
+  padding: 0 10px;
+}
+
+.instagram-section .slider-wrapper.slider_box.slider_arrow .slick-arrow {
+  width: 50px;
+  height: 50px;
+}
+.instagram-section .slider_box.slider_arrow .slick-arrow.slick-prev {
+  left: -15px;
+}
+.slider_box.slider_arrow .slick-arrow.slick-next {
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  right: 20px;
+}
+.instagram-section .slider_box.slider_arrow .slick-arrow.slick-next {
+  right: -15px;
+}
+.icon-instagram:before {
+  content: "\e912";
+}
+.instagram-section {
+  width: 100%;
+  padding: 0px 30px 0px 30px;
+}
+.instagram-section h3 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #f44436;
+  text-align: center;
+}
+.instagram-section .slider-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+.instagram-section .slider-wrapper .item {
+  /* width: 20%; */
+  border-radius: 8px;
+}
+.instagram-section .slider-wrapper .item .img-box {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  padding: 10px;
+}
+.instagram-section .slider-wrapper .item .img-box img {
+  border-radius: 8px;
+}
+.instagram-section .slider-wrapper .item .info-insta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 12px;
+}
+.instagram-section .slider-wrapper .item .info-insta .insta-icon {
+  width: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .instagram-section .slider-wrapper {
+    padding: 0;
+  }
+  .instagram-section .slider-wrapper.slider_box.slider_arrow .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slider-carousel_items .slick-dots li button {
+    height: 8px;
+    width: 8px;
+    border: 0px;
+    padding: 0px;
+    background-color: #fff;
+    appearance: none;
+    margin-right: 12px;
+    background-color: #d8d2d2;
+    border-radius: 50%;
+    line-height: 0px;
+  }
+  .slider-carousel_items .slick-dots .slick-active button {
+    background-color: #000 !important;
+  }
+  .slider-carousel_items .slide-dots {
+    background-color: transparent !important;
+  }
+  .tag-picture-list .slick-arrow.slick-prev {
+    left: 0;
+  }
+  .tag-picture-list .slick-arrow {
+    top: 29%;
+    height: 30px;
+    width: 30px;
+  }
+  .star-re-con {
+    color: #a3a3a3;
+  }
+  .sub-banner-button .button_light {
+    max-width: 99px;
+    min-width: 99px;
+    padding: 8px 5px 7px;
+    text-align: center;
+  }
+  .hp_banner_section .banner-content .content,
+  .sub-banner-button {
+    padding: 20px;
+  }
+  .best_sellers .h2-title,
+  .h2-title {
+    padding-bottom: 0px;
+    color: #f44436 !important;
+  }
+  .shop_section {
+    padding: 0px 20px 40px 20px;
+  }
+  .instagram-section {
+    padding: 0px;
+  }
+  .instagram-section .slider-wrapper .slick-initialized .slick-slide {
+    padding: 0px;
+  }
+  .instagram-section .slider-wrapper.slider_box.slider_arrow .slick-prev {
+    left: -4%;
+  }
+  .instagram-section .slider-wrapper.slider_box.slider_arrow .slick-next {
+    right: -4%;
+  }
+
+  .iiz__btn.iiz__hint {
+    display: none !important;
+  }
+}
+</style>
