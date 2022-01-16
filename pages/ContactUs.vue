@@ -67,7 +67,7 @@
             type="submit"
             value="SEND"
           >
-            <div class="alt-send-button" @click="sendMail('contact')" >
+            <div class="alt-send-button" @click="sendMail('contact')">
               <i class="fa fa-paper-plane"></i
               ><span class="send-text">SEND</span>
             </div>
@@ -110,13 +110,21 @@
           <hr />
           <ul class="social-media-list">
             <li>
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-twitter" aria-hidden="true"></i
+              <a
+                href="https://www.instagram.com/idinterior195/"
+                target="_blank"
+                class="contact-icon"
+              >
+                <i class="fa fa-instagram" aria-hidden="true"></i
               ></a>
             </li>
             <li>
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-instagram" aria-hidden="true"></i
+              <a
+                href="https://www.facebook.com/idinterior195"
+                target="_blank"
+                class="contact-icon"
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i
               ></a>
             </li>
           </ul>
@@ -126,11 +134,16 @@
         </div>
       </div>
     </section>
+    <section class="maps">
+      <Maps />
+    </section>
   </div>
 </template>
 
 <script>
+import Maps from "@/components/layout/Maps.vue";
 export default {
+  components: { Maps },
   head() {
     return {
       title: "Contact us",
@@ -328,7 +341,7 @@ textarea {
 }
 
 .social-media-list li {
-  position: relative;
+  /* position: relative; */
   display: inline-block;
   height: 60px;
   width: 60px;

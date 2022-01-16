@@ -36,6 +36,16 @@
 
 <script>
 export default {
+//   head() {
+//     return {
+//       script: [
+//         {
+//           src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&callback=initMap",
+//           body: true,
+//         },
+//       ],
+//     };
+//   },
   methods: {
     renderMap() {
       var marker;

@@ -7,12 +7,12 @@
       </span>
       <div class="main-banner-text">
         <strong class="elementskit-section-subtitle"
-          >Interiors Made Easy</strong
+          >You choose, we execute</strong
         >
         <h2 class="ekit-heading--title elementskit-section-title">
           INCENSE DESIGN
         </h2>
-        <small>Delivery in 45 Days</small>
+        <small>Architecture, Interior, Furniture</small>
         <a
           class="
             elementskit-btn
