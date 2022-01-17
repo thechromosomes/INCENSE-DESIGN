@@ -2998,7 +2998,7 @@
   font-size: 22px;
   color: #444;}
   .main-banner-text > a{background: #f44336;
-    color: #fff;
+    color: #fff!important;
     padding: 14px 30px;
     display: inline-block;
     font-weight: 600;

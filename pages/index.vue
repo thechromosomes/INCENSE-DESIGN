@@ -170,7 +170,7 @@ export default {
   methods: {
     togglePopUp() {
       this.$store.commit("setQueryUpPopUp", {
-        status: false,
+        status: true,
       });
     },
   },
