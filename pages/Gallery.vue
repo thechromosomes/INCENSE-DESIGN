@@ -101,7 +101,7 @@ export default {
         title: this.images[index].name,
         imageUrl: this.images[index].path,
         button: "Nice",
-        timer: 10000,
+        // timer: 10000,
       });
     },
   },
@@ -205,5 +205,17 @@ export default {
 
 #Item:hover {
   filter: hue-rotate(50deg);
+}
+/* =========== */
+@media only screen and  (max-width:767px) {
+#List {
+   
+    grid-template-columns: 100% 100%;margin-bottom: 30px; background-color: #fff;padding: 15px;
+    
+}
+#List{ display: block;}
+#Item{ margin-bottom: 20px;}
+
+
 }
 </style>

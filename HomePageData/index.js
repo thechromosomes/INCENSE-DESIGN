@@ -153,7 +153,7 @@ export const SecondSection = {
       link: "#",
     },
     {
-      title: "Furniture",
+      title: "Furniture & More",
       description:
         "InterDesign is a design agency that specializes in Interior designing",
       image: require("./images/furnitures.png"),

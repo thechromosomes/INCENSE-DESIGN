@@ -98,6 +98,7 @@
             <Card :payload="FirstSection" />
             <div class="complte-intro-compo">
             <Card :payload="SecondSection" />
+            
             </div>
 
             <Testimonial />

@@ -149,7 +149,8 @@ export default {
 .insta-icon{position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%); filter:invert(1)}
+    transform: translate(-50% ,-50%); filter:invert(1); opacity: 0;}
+    .img-box:hover .insta-icon{ opacity: 1;}
 @media only screen and (max-width: 767px) {
   .instagram-section .slider-wrapper {
     padding: 0;
