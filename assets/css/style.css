@@ -201,13 +201,15 @@ h6 {
 
 .bottomStickBotton {
   position: fixed;
-  bottom: 0px;
+  bottom: 5px;
   right: 0;
 }
-
+.bottomStickBotton.call-stick{ bottom: 50px;}
 .bottomStickBotton img {
-  width: 79px;
-  padding: 15px;
+  width: 36px;
+  padding: 8px;
+  /* background: #323850; */
+  border: 1px solid #f44336!important;
 }
 
 /* #header #logo h1 {
