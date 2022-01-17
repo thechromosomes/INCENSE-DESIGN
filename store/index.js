@@ -1,6 +1,7 @@
 export const state = () => ({
   queryUpPopUp: false,
   BASE_URL: "http://localhost:3001",
+  homePageBannerLoaded: false,
 
   pageLoader: false,
 });
@@ -9,6 +10,10 @@ export const mutations = {
   // set header queryUpPopUp
   setQueryUpPopUp(state, data) {
     state.queryUpPopUp = data.status;
+  },
+
+  setHomePageBannerLoaded(state, data) {
+    state.homePageBannerLoaded = data.status;
   },
   // update loader status
   updatePageLoader(state, { display }) {

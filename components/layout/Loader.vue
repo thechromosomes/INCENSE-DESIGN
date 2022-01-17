@@ -36,16 +36,16 @@
         <div class="loader">
           <div class="row">
             <div class="col-3 loader-section section-left">
-              <div class="bg" />
+              <div :class="[ !$store.state.homePageBannerLoaded ? 'white-bg'   : 'bg']" />
             </div>
             <div class="col-3 loader-section section-left">
-              <div class="bg" />
+              <div :class="[ !$store.state.homePageBannerLoaded ? 'white-bg'   : 'bg']" />
             </div>
             <div class="col-3 loader-section section-right">
-              <div class="bg" />
+              <div :class="[ !$store.state.homePageBannerLoaded ? 'white-bg'   : 'bg']" />
             </div>
             <div class="col-3 loader-section section-right">
-              <div class="bg" />
+              <div :class="[ !$store.state.homePageBannerLoaded ? 'white-bg'   : 'bg']" />
             </div>
           </div>
         </div>
@@ -245,6 +245,13 @@
   height: 100%;
   left: 0;
   background-color: #d11a1a6c;
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+#preloader.preloader .loader .row .loader-section .white-bg {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #f44336;
   transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 @keyframes loader {

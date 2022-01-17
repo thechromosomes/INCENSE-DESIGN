@@ -11,9 +11,37 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
+
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Premium interior and exterior for all. The finest designing solution in the world. Avail great offers & deals. ✓Assured Quality.",
+      },
+      {
+        hid: "og:Incense Design",
+        property: "og:Incense Design",
+        content: "Incense Design",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/logo.png",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/x-icon", href: "/logo.png" },
+      {
+        rel: "alternate",
+        href: "https://www.incensedesign.com/",
+        hreflang: "en-IN",
+      },
+      {
+        rel: "alternate",
+        href: "https://www.incensedesign.com/",
+        hreflang: "x-default",
+      },
       {
         href:
           "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700",
@@ -57,7 +85,7 @@ export default {
 
   // dynamic port configuration
   server: {
-    port: process.env.PORT || 3001, // default: 3000
+    port: 3001, // default: 3000
     // host: "0.0.0.0", // default: localhost
   },
 };

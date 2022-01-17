@@ -1,9 +1,15 @@
 <template>
   <div>
     <!-- main banner -->
+
+    <!-- page loader -->
+    <Loader v-show="!$store.state.homePageBannerLoaded" />
     <div class="mainBanner">
       <span>
-        <img src="@/static/IDMainBanner.gif" />
+        <img
+          src="@/static/IDMainBanner.gif"
+          @load="toggleHomePageBannerLoaded()"
+        />
       </span>
       <div class="main-banner-text">
         <strong class="elementskit-section-subtitle"
@@ -95,6 +101,9 @@ import Testimonial from "@/components/layout/testimonial.vue";
 import HappyCustomer from "@/components/layout/HappyCustomer.vue";
 import OurPartners from "@/components/layout/OurPartners.vue";
 import Instagram from "@/components/layout/Instagram.vue";
+import Loader from "@/components/layout/Loader.vue";
+
+import { keyWord } from "@/utils/keyWord.js";
 
 import {
   FirstSection,
@@ -104,6 +113,7 @@ import {
 export default {
   components: {
     Card,
+    Loader,
     Testimonial,
     HappyCustomer,
     OurPartners,
@@ -124,34 +134,87 @@ export default {
         status: false,
       });
     },
+
+    toggleHomePageBannerLoaded() {
+      setTimeout(() => {
+        this.$store.commit("setHomePageBannerLoaded", {
+          status: true,
+        });
+      }, 3000);
+    },
+  },
+
+  jsonld() {
+    return {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      name: "Incense Design - You choose, we execute",
+      image: "./logo.png",
+      "@id": "",
+      url: "www.incensedesign.in/",
+      telephone: "8588880111",
+
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "SD A-19 sector 45 Noida",
+        addressLocality: "Noida",
+        postalCode: "201303",
+        addressCountry: "IN",
+      },
+      sameAs: [
+        "https://www.instagram.com/idinterior195/",
+        "https://www.facebook.com/idinterior195",
+      ],
+    };
   },
 
   head() {
     return {
-      title: "this.title",
+      title: "Incense Design",
       meta: [
         {
-          hid: "this.description",
-          name: "this.description",
-          content: "this.description",
+          hid: "description",
+          name: "description",
+          content: "Incense Design || You choose, we execute",
+        },
+        {
+          hid: "keyword",
+          name: "keyword",
+          content: this.renderKeywords,
         },
         {
           hid: "og:title",
-          content: "this.title",
+          content: "Incense Design",
           property: "og:title",
         },
         {
           hid: "og:description",
-          content: "this.description",
+          content: "Incense Design || You choose, we execute",
           property: "og:description",
         },
         {
           hid: "og:url",
-          content: "this.url",
+          content: this.$store.state.BASE_URL + this.$route.fullPath,
           property: "og:url",
         },
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: `${this.$store.state.BASE_URL}${this.$route.path}`,
+        },
+      ],
     };
+  },
+
+  computed: {
+    renderKeywords() {
+      let finalArray = [];
+      for (let i = 0; i < keyWord.length; i++) {
+        finalArray.push(keyWord[i].Column3);
+      }
+      return finalArray.join(" || ");
+    },
   },
 };
 </script>

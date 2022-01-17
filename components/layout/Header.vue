@@ -61,6 +61,15 @@ export default {
       });
     },
   },
+
+  mounted() {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
+  },
 };
 </script>
 <style scoped>

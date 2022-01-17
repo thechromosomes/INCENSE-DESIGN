@@ -1,17 +1,5 @@
 export const keyWord = [
   {
-    "KEYWORDS FOR ID - WEBSITE ": "S.No.",
-    Column3: "Keyword",
-    Column4: null,
-    Column5: null,
-    Column6: null,
-    Column7: null,
-    Column8: null,
-    Column9: null,
-    Column10: null,
-    Column11: null,
-  },
-  {
     "KEYWORDS FOR ID - WEBSITE ": 1,
     Column3: "interior design in noida",
     Column4: null,
