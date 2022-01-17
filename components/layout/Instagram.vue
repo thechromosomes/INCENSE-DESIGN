@@ -12,7 +12,13 @@
                 alt="img"
                 class="w-100"
               />
-              <div class="overlaey"></div>
+              <div class="overlaey">
+                <span class="insta-icon"> <img
+                src="~/assets/img/instagram.png" aria-label="instagram"
+                alt="img"
+                
+              /></span>
+              </div>
             </div>
           </div>
         </VueSlickCarousel>
@@ -140,7 +146,10 @@ export default {
 .instagram-section .slider-wrapper .item .info-insta .insta-icon {
   width: 15px;
 }
-
+.insta-icon{position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%); filter:invert(1)}
 @media only screen and (max-width: 767px) {
   .instagram-section .slider-wrapper {
     padding: 0;
