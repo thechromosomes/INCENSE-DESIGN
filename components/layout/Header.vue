@@ -75,15 +75,26 @@ export default {
     display: block !important;
   }
   .nav-menu li:last-child {
-    width: 100%;
-    text-align: center;
+   
+   text-align: center;
     margin-top: 10px;
+    background-color: #f4433c;
+    color: #fff;
+    border-radius: 10px;padding: 3px 0px;
   }
+  .nav-menu li:last-child a{ color: #fff;padding: 3px 12px;}
   .mobile-toogle {
     display: inline-block;
     width: 41px;
     position: absolute;
     right: 15px;
   }
+  .section-header {
+  
+    font: 300 33px "Oswald", sans-serif;
+   
+    font-weight: 600;
+    margin-bottom: 19px;
+}
 }
 </style>

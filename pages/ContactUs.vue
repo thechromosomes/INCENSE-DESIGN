@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="contact">
-      <p class="section-header">Contact</p>
+      <h2 class="section-header">Contact</h2>
 
       <div class="contact-wrapper">
         <!-- Left contact page -->
@@ -51,7 +51,8 @@
               />
             </div>
           </div>
-
+<div class="form-group">
+            <div class="col-sm-12">
           <textarea
             class="form-control"
             rows="10"
@@ -60,7 +61,8 @@
             name="message"
             required
           ></textarea>
-
+            </div>
+</div>
           <button
             class="btn btn-primary send-button"
             id="submit"
@@ -130,7 +132,7 @@
           </ul>
           <hr />
 
-          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+         
         </div>
       </div>
     </section>
@@ -215,18 +217,21 @@ export default {
 </script>
 
 <style scoped>
+.maps{ margin-bottom: 60px!important;}
 #contact {
   width: 100%;
   height: 100%;
 }
 
 .section-header {
-  text-align: center;
-  margin: 0 auto;
-  font: 300 40px "Oswald", sans-serif;
-  color: rgb(218, 29, 29);
-  text-transform: uppercase;
-  letter-spacing: 6px;
+    text-align: center;
+    margin: 0 auto;
+    font: 300 40px "Oswald", sans-serif;
+    color: rgb(211 76 76);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 .contact-wrapper {
@@ -250,11 +255,10 @@ export default {
 .form-control,
 textarea {
   max-width: 400px;
-  background-color: #000;
-  color: #fff;
+  background-color: transparent; border: 1px solid #000; height: 40px;
   letter-spacing: 1px;
 }
-
+input.form-control::placeholder{ color: #000;font-family:"Oswald", sans-serif; text-transform: capitalize;}
 .send-button {
   margin-top: 15px;
   height: 34px;
@@ -294,17 +298,17 @@ textarea {
 
 .list-item {
   line-height: 4;
-  color: #aaa;
+  color: rgb(0, 0, 0);
 }
 
 .contact-text {
   font: 300 18px "Lato", sans-serif;
   letter-spacing: 1.9px;
-  color: #f44436;
+  color: #000000;
 }
 
-.place {
-  margin-left: 62px;
+.place ,.contact-text.phone ,.contact-text.gmail {
+  margin-left: 25px;
 }
 
 .phone {
@@ -316,7 +320,7 @@ textarea {
 }
 
 .contact-text a {
-  color: #f44436;
+  color: #000000;
   text-decoration: none;
   transition-duration: 0.2s;
 }
@@ -330,21 +334,23 @@ textarea {
 .social-media-list {
   position: relative;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
   width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
 .social-media-list li a {
-  color: #fff;
+ color: #fff;
+    text-align: center;
+    display: block; line-height: 40px;
 }
 
 .social-media-list li {
   /* position: relative; */
   display: inline-block;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   margin: 10px 3px;
   line-height: 60px;
   border-radius: 50%;
@@ -434,8 +440,10 @@ hr {
   .name,
   .email,
   textarea {
-    width: 280px;
+    width: 100%;
   }
+  .contact-wrapper {
+    display: block;}
 
   .direct-contact-container {
     margin-top: 60px;
@@ -455,6 +463,17 @@ hr {
     height: 55px;
     line-height: 55px;
   }
+  .direct-contact-container{ width: 100%; padding: 0px;}
+  .contact-list{padding: 0px;}
+  .social-media-list li a{
+   
+    line-height: 54px;
+}
+#contact{ padding-bottom: 0px;}
+.nav-tabs {
+  
+    margin-bottom: 30px;
+}
 }
 
 @media screen and (max-width: 410px) {

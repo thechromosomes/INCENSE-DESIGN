@@ -3,13 +3,17 @@
     <div class="container">
       <section class="customer-logos slider">
         <h2>Our Partners</h2>
-        <Slick :options="slickOptions">
+        <!-- <Slick :options="slickOptions">
           <div class="slide" v-for="(item, index) in 9" :key="index">
             <img
               src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"
             />
           </div>
-        </Slick>
+        </Slick> -->
+        <img
+              src="~/assets/img/client.jpg"
+            />
+
       </section>
     </div>
   </div>

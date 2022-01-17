@@ -25,6 +25,50 @@
       </div>
     </div>
     <!-- main banner en -->
+    <section class="interiirro">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 img-box">
+            
+           <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <img src="@/static/4.jpg" alt="">
+                          </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body ">
+                        <h3 class="card-title">Home Interior</h3>
+                        <p class="card-text">Suprise this one has more more more more content on the back!</p>
+                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+           
+           
+           
+       <div class="col-sm-6 img-box">
+            
+           <div class="card card-flip h-100">
+                <div class="card-front text-white bg-dark">
+                    <div class="card-body">
+                        <img src="@/static/4.jpg" alt=""></div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h3 class="card-title">office Interior</h3>
+                        <p class="card-text">Suprise this one has more more more more content on the back!</p>
+                        <a href="#" class="btn btn-outline-secondary">Action</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<div class="clearfix"></div>
+    <!-- ========  -->
     <div
       data-rsssl="1"
       class="
@@ -52,8 +96,9 @@
         <div class="elementor-inner">
           <div class="elementor-section-wrap">
             <Card :payload="FirstSection" />
-
+            <div class="complte-intro-compo">
             <Card :payload="SecondSection" />
+            </div>
 
             <Testimonial />
 
@@ -68,6 +113,10 @@
             <section class="bottomStickBotton">
               <a href="https://wa.me/message/9988998898" target="blank"
                 ><img src="@/assets/img/whatsApp.png" />
+              </a>
+            </section>
+             <section class="bottomStickBotton call-stick">
+              <a href="tel:9988998898" target="blank"> <img src="@/assets/img/call.png" />
               </a>
             </section>
           </div>

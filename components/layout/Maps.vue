@@ -1,16 +1,19 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container tab-ection">
       <div class="main">
         <div class="row">
-          <div class="col-sm-2">
+          <div class="col-sm-3 col-12">
+            <h2>STORE LOCATOR</h2>
             <ul class="nav nav-tabs" id="myTab">
               <li class="active">
-                <a id="link1" href="#office" data-toggle="tab">Tab 1</a>
+                <a id="link1" href="#office" data-toggle="tab">address one</a>
+                <p>Block 750 B (Part of 750) VPO Luhari</p>
               </li>
-              <li><a id="link2" href="#rnd" data-toggle="tab">Tab 2</a></li>
+              <li><a id="link2" href="#rnd" data-toggle="tab">addres two</a>
+              <p>Block 750 B (Part of 750) VPO Luhari</p></li>
             </ul>
-            <div class="tab-content">
+            <!-- <div class="tab-content">
               <div class="tab-pane active" id="office">
                 <h1>Contact 1</h1>
                 <h4>Address 1</h4>
@@ -19,9 +22,9 @@
                 <h1>Contact 2</h1>
                 <h4>Address 2</h4>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="col-sm-10">
+          <div class="col-sm-9 col-12">
             <div
               id="map_canvas"
               style="height: 250px; border: thin solid black"
@@ -122,6 +125,8 @@ export default {
 </script>
 
 <style scoped>
+
+.tab-ection h2{ font-size: 20px; font-weight: 600;}
 .main {
   margin-top: 25px;
 }
@@ -132,16 +137,20 @@ export default {
 .nav-tabs > li > a {
   border: none;
   border-radius: 0;
-  background-color: #eee;
+  
 }
+.nav-tabs > li > p{ padding-bottom: 0px; margin-bottom: 0px;font-size: 14px;
+    padding-top: 7px;}
+.nav-tabs > li{ padding: 12px 0px; border-top: 1px dashed #ccc; width: 100%; }
+.nav-tabs > li > a{ color: #000; text-transform: capitalize; letter-spacing: 1px; font-weight: 600;}
 .nav-tabs > li > a:hover {
-  background-color: #8845a6;
-  color: #fff;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 .nav-tabs > li.active > a {
   border: none;
-  background-color: #8845a6;
-  color: #fff;
+  background-color: #ffffff;
+  color: rgb(244 67 54);
 }
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
@@ -149,4 +158,5 @@ export default {
   background-color: #8845a6;
   color: #fff;
 }
+
 </style>
