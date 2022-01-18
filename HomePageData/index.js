@@ -93,8 +93,8 @@ export const FirstSection = {
 };
 
 
-export const SecondSection = {
-  title: "Complete Interior Solutions ",
+export const SecondSectionone = {
+  title: "Complete Interior Solutions1 ",
   data: [
     {
       title: "Modular Kitchen",
@@ -117,6 +117,47 @@ export const SecondSection = {
       image: require("./images/closet.png"),
       link: "#",
     },
+    // {
+    //   title: "TV Units",
+    //   description:
+    //     "InterDesign is a design agency that specializes in Interior designing",
+    //   image: require("./images/tv-stand.png"),
+    //   link: "#",
+    // },
+    //  {
+    //   title: "Painting",
+    //   description:
+    //     "InterDesign is a design agency that specializes in Interior designing",
+    //   image: require("./images/painting.png"),
+    //   link: "#",
+    // },
+    // {
+    //   title: "Study Tables",
+    //   description:
+    //     "InterDesign is a design agency that specializes in Interior designing",
+    //   image: require("./images/office-desk.png"),
+    //   link: "#",
+    // },
+    //  {
+    //   title: "False Ceiling",
+    //   description:
+    //     "InterDesign is a design agency that specializes in Interior designing",
+    //   image: require("./images/lamp.png"),
+    //   link: "#",
+    // },
+    // {
+    //   title: "Furniture & More",
+    //   description:
+    //     "InterDesign is a design agency that specializes in Interior designing",
+    //   image: require("./images/furnitures.png"),
+    //   link: "#",
+    // },
+  ]
+}
+export const SecondSectiontwo = {
+  title: "Complete Interior Solutions2 ",
+  data: [
+    
     {
       title: "TV Units",
       description:
@@ -138,6 +179,27 @@ export const SecondSection = {
       image: require("./images/office-desk.png"),
       link: "#",
     },
+    //  {
+    //   title: "False Ceiling",
+    //   description:
+    //     "InterDesign is a design agency that specializes in Interior designing",
+    //   image: require("./images/lamp.png"),
+    //   link: "#",
+    // },
+    // {
+    //   title: "Furniture & More",
+    //   description:
+    //     "InterDesign is a design agency that specializes in Interior designing",
+    //   image: require("./images/furnitures.png"),
+    //   link: "#",
+    // },
+  ]
+}
+export const SecondSectionthree = {
+  title: "Complete Interior Solutions3",
+  data: [
+    
+    
      {
       title: "False Ceiling",
       description:

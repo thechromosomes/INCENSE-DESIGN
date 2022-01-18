@@ -95,10 +95,18 @@
       >
         <div class="elementor-inner">
           <div class="elementor-section-wrap">
+
+
             <Card :payload="FirstSection" />
+
             <div class="complte-intro-compo">
-            <Card :payload="SecondSection" />
-            
+            <Card :payload="SecondSectionone"></card>
+            </div>
+             <div class="complte-intro-compo">
+            <Card :payload="SecondSectiontwo"></card>
+            </div>
+             <div class="complte-intro-compo">
+            <Card :payload="SecondSectionthree"></card>
             </div>
 
             <Testimonial />
@@ -148,7 +156,9 @@ import Instagram from "@/components/layout/Instagram.vue";
 
 import {
   FirstSection,
-  SecondSection,
+  SecondSectionone,
+   SecondSectiontwo,
+    SecondSectionthree,
   ThirdSection,
 } from "@/HomePageData/index";
 export default {
@@ -164,7 +174,9 @@ export default {
     return {
       ThirdSection: ThirdSection,
       FirstSection: FirstSection,
-      SecondSection: SecondSection,
+      SecondSectionone: SecondSectionone,
+      SecondSectiontwo: SecondSectiontwo,
+      SecondSectionthree: SecondSectionthree,
     };
   },
 
