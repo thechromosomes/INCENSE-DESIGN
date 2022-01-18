@@ -107,6 +107,22 @@ h6 {
   }
 }
 
+.module2-title {
+  color: #f44436;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.module2-back {
+  background: #e30a0aba;
+  color: #fff;
+  font-weight: 700;
+}
+
+.opacity-modul2 img {
+  opacity: 0.6 !important;
+}
+
 .back-to-top:focus {
   background: #e91e63;
   color: #fff;
@@ -204,12 +220,14 @@ h6 {
   bottom: 5px;
   right: 0;
 }
-.bottomStickBotton.call-stick{ bottom: 50px;}
+.bottomStickBotton.call-stick {
+  bottom: 50px;
+}
 .bottomStickBotton img {
   width: 36px;
   padding: 8px;
   /* background: #323850; */
-  border: 1px solid #f44336!important;
+  border: 1px solid #f44336 !important;
 }
 
 /* #header #logo h1 {

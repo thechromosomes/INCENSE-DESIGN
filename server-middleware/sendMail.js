@@ -64,10 +64,12 @@ app.post("/sendmail", async (req, res) => {
     // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
+        console.log("error >>> ",error);
         res.send({
           status: false,
           message: "Error occurred while sending email",
         });
+        return false;
       }
 
       res.send({

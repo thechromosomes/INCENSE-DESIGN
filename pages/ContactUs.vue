@@ -51,18 +51,18 @@
               />
             </div>
           </div>
-<div class="form-group">
+          <div class="form-group">
             <div class="col-sm-12">
-          <textarea
-            class="form-control"
-            rows="10"
-            placeholder="MESSAGE"
-            v-model="user.message"
-            name="message"
-            required
-          ></textarea>
+              <textarea
+                class="form-control"
+                rows="10"
+                placeholder="MESSAGE"
+                v-model="user.message"
+                name="message"
+                required
+              ></textarea>
             </div>
-</div>
+          </div>
           <button
             class="btn btn-primary send-button"
             id="submit"
@@ -131,8 +131,6 @@
             </li>
           </ul>
           <hr />
-
-         
         </div>
       </div>
     </section>
@@ -217,21 +215,23 @@ export default {
 </script>
 
 <style scoped>
-.maps{ margin-bottom: 60px!important;}
+.maps {
+  margin-bottom: 60px !important;
+}
 #contact {
   width: 100%;
   height: 100%;
 }
 
 .section-header {
-    text-align: center;
-    margin: 0 auto;
-    font: 300 40px "Oswald", sans-serif;
-    color: rgb(211 76 76);
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    font-weight: 600;
-    margin-bottom: 40px;
+  text-align: center;
+  margin: 0 auto;
+  font: 300 40px "Oswald", sans-serif;
+  color: rgb(211 76 76);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .contact-wrapper {
@@ -255,10 +255,16 @@ export default {
 .form-control,
 textarea {
   max-width: 400px;
-  background-color: transparent; border: 1px solid #000; height: 40px;
+  background-color: transparent;
+  border: 1px solid #000;
+  height: 40px;
   letter-spacing: 1px;
 }
-input.form-control::placeholder{ color: #000;font-family:"Oswald", sans-serif; text-transform: capitalize;}
+input.form-control::placeholder {
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
+}
 .send-button {
   margin-top: 15px;
   height: 34px;
@@ -307,7 +313,9 @@ input.form-control::placeholder{ color: #000;font-family:"Oswald", sans-serif; t
   color: #000000;
 }
 
-.place ,.contact-text.phone ,.contact-text.gmail {
+.place,
+.contact-text.phone,
+.contact-text.gmail {
   margin-left: 25px;
 }
 
@@ -332,18 +340,19 @@ input.form-control::placeholder{ color: #000;font-family:"Oswald", sans-serif; t
 
 /* Social Media Icons */
 .social-media-list {
-  position: relative;
   font-size: 22px;
   text-align: left;
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  text-align: left;
 }
 
 .social-media-list li a {
- color: #fff;
-    text-align: center;
-    display: block; line-height: 40px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  line-height: 40px;
 }
 
 .social-media-list li {
@@ -443,7 +452,8 @@ hr {
     width: 100%;
   }
   .contact-wrapper {
-    display: block;}
+    display: block;
+  }
 
   .direct-contact-container {
     margin-top: 60px;
@@ -463,17 +473,22 @@ hr {
     height: 55px;
     line-height: 55px;
   }
-  .direct-contact-container{ width: 100%; padding: 0px;}
-  .contact-list{padding: 0px;}
-  .social-media-list li a{
-   
+  .direct-contact-container {
+    width: 100%;
+    padding: 0px;
+  }
+  .contact-list {
+    padding: 0px;
+  }
+  .social-media-list li a {
     line-height: 54px;
-}
-#contact{ padding-bottom: 0px;}
-.nav-tabs {
-  
+  }
+  #contact {
+    padding-bottom: 0px;
+  }
+  .nav-tabs {
     margin-bottom: 30px;
-}
+  }
 }
 
 @media screen and (max-width: 410px) {
