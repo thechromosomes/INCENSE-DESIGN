@@ -11,7 +11,7 @@
           </div>
         </Slick> -->
         <img
-              src="~/assets/img/client.jpg"
+              src="~/assets/img/client.jpg" class="clients-img"
             />
 
       </section>

@@ -217,17 +217,19 @@ h6 {
 
 .bottomStickBotton {
   position: fixed;
-  bottom: 5px;
-  right: 0;
+  bottom: 29px;
+  right: 0; background-color: #f44336;opacity: 1;
 }
 .bottomStickBotton.call-stick {
   bottom: 50px;
 }
+.bottomStickBotton.call-stick{ bottom: 66px;}
 .bottomStickBotton img {
-  width: 36px;
-  padding: 8px;
+  width: 31px;
+  padding: 4px;filter: invert(1); opacity: 1;
   /* background: #323850; */
   border: 1px solid #f44336 !important;
+  
 }
 
 /* #header #logo h1 {

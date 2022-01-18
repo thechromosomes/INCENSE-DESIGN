@@ -68,7 +68,7 @@ export const FirstSection = {
       image: require("./images/analysis.png"),
       link: "#",
     },
-     {
+    {
       title: "Budget Friendly",
       description:
         "InterDesign is a design agency that specializes in Interior designing",
@@ -92,9 +92,8 @@ export const FirstSection = {
   ],
 };
 
-
 export const SecondSection = {
-  title: "Complete Interior Solutions ",
+  title: "Complete Interior Solutions1 ",
   data: [
     {
       title: "Modular Kitchen",
@@ -109,8 +108,8 @@ export const SecondSection = {
         "InterDesign is a design agency that specializes in Interior designing",
       image: require("./images/washing.png"),
       link: "#",
-    },  
-     {
+    },
+    {
       title: "Wardrobes",
       description:
         "InterDesign is a design agency that specializes in Interior designing",
@@ -124,7 +123,7 @@ export const SecondSection = {
       image: require("./images/tv-stand.png"),
       link: "#",
     },
-     {
+    {
       title: "Painting",
       description:
         "InterDesign is a design agency that specializes in Interior designing",
@@ -138,7 +137,8 @@ export const SecondSection = {
       image: require("./images/office-desk.png"),
       link: "#",
     },
-     {
+
+    {
       title: "False Ceiling",
       description:
         "InterDesign is a design agency that specializes in Interior designing",
@@ -152,15 +152,8 @@ export const SecondSection = {
       image: require("./images/furnitures.png"),
       link: "#",
     },
-    {
-      title: "Furniture",
-      description:
-        "InterDesign is a design agency that specializes in Interior designing",
-      image: require("./images/furnitures.png"),
-      link: "#",
-    },
-  ]
-}
+  ],
+};
 
 export const ThirdSection = {
   title: "How we works?",
@@ -193,5 +186,5 @@ export const ThirdSection = {
       image: require("./images/idea.png"),
       link: "#",
     },
-  ]
-}
+  ],
+};

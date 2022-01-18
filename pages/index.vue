@@ -120,10 +120,12 @@
       >
         <div class="elementor-inner">
           <div class="elementor-section-wrap">
+
+
             <Card :payload="FirstSection" />
 
             <div class="complte-intro-compo">
-              <Card :payload="SecondSection" />
+            <Card :payload="SecondSection"></card>
             </div>
 
             <Testimonial />
