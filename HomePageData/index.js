@@ -93,7 +93,7 @@ export const FirstSection = {
 };
 
 export const SecondSection = {
-  title: "Complete Interior Solutions1 ",
+  title: "Complete Interior Solutions",
   data: [
     {
       title: "Modular Kitchen",
