@@ -1,7 +1,7 @@
 export const state = () => ({
   queryUpPopUp: false,
   // BASE_URL: "http://localhost:3001",
-  BASE_URL: "https://interdesign.com",
+  BASE_URL: "https://incensedesign.com",
   homePageBannerLoaded: false,
 
   pageLoader: false,
