@@ -13,11 +13,12 @@
                 class="w-100"
               />
               <div class="overlaey">
-                <span class="insta-icon"> <img
-                src="~/assets/img/instagram.png" aria-label="instagram"
-                alt="img"
-                
-              /></span>
+                <span class="insta-icon">
+                  <img
+                    src="~/assets/img/instagram.png"
+                    aria-label="instagram"
+                    alt="img"
+                /></span>
               </div>
             </div>
           </div>
@@ -43,10 +44,11 @@ export default {
       settingsInsta: {
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         draggable: true,
         infinite: false,
         autoplay: true,
+        dots: false,
 
         responsive: [
           {
@@ -79,9 +81,9 @@ export default {
   margin: 10px auto;
   text-align: center;
 }
-.b-flowbox-body p {
+/* .b-flowbox-body p {
   margin: 20px 0;
-}
+} */
 .b-flowbox-body b {
   color: #f44436;
 }
@@ -146,11 +148,17 @@ export default {
 .instagram-section .slider-wrapper .item .info-insta .insta-icon {
   width: 15px;
 }
-.insta-icon{position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% ,-50%); filter:invert(1); opacity: 0;}
-    .img-box:hover .insta-icon{ opacity: 1;}
+.insta-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: invert(1);
+  opacity: 0;
+}
+.img-box:hover .insta-icon {
+  opacity: 1;
+}
 @media only screen and (max-width: 767px) {
   .instagram-section .slider-wrapper {
     padding: 0;

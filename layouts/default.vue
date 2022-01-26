@@ -9,9 +9,7 @@
       </transition>
       <nuxt />
     </div>
-    <div>
-      <!-- <Footer /> -->
-    </div>
+  
   </div>
 </template>
 

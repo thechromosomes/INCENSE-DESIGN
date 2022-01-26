@@ -293,4 +293,9 @@
     opacity: 1;
   }
 }
+@media only screen and (max-width: 767px) {
+  #preloader.preloader .animation-preloader .txt-loading {
+    font: bold 3em "Poppins", sans-serif !important;
+  }
+}
 </style>

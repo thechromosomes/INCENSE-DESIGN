@@ -139,12 +139,12 @@
             <OurPartners />
 
             <section class="bottomStickBotton">
-              <a href="https://wa.me/message/9988998898" target="blank"
+              <a href="https://wa.link/pycwjd" target="blank"
                 ><img src="@/assets/img/whatsApp.png" />
               </a>
             </section>
             <section class="bottomStickBotton call-stick">
-              <a href="tel:9988998898" target="blank">
+              <a href="tel:+8588880111" target="blank">
                 <img src="@/assets/img/call.png" />
               </a>
             </section>
@@ -212,7 +212,7 @@ export default {
         this.$store.commit("setHomePageBannerLoaded", {
           status: true,
         });
-      }, 3000);
+      }, 1000);
     },
   },
 
