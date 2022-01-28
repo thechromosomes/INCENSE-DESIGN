@@ -1,27 +1,32 @@
 <template>
-  <div class="container mainContainer">
+  <div class="container mainContainer" v-if="instaPost.length">
     <!-- instagram @ -->
     <div class="instagram-section">
       <h3 class="title">@IncenseDesign</h3>
       <div class="slider-wrapper slider_box slider_arrow">
         <VueSlickCarousel ref="slick" :options="settingsInsta">
-          <div class="item" v-for="(image, imgIndex) in 9" :key="imgIndex">
+          <template v-for="(image, imgIndex) in instaPost">
+
+          <div class="item"  v-if="image.media_type === 'IMAGE'" :key="imgIndex">
             <div class="img-box">
               <img
-                src="https://via.placeholder.com/150"
+                :src="image.media_url"
                 alt="img"
                 class="w-100"
               />
               <div class="overlaey">
+                <a :href="image.permalink" target="_blank">
                 <span class="insta-icon">
                   <img
                     src="~/assets/img/instagram.png"
                     aria-label="instagram"
                     alt="img"
                 /></span>
+                </a>
               </div>
             </div>
           </div>
+          </template>
         </VueSlickCarousel>
       </div>
       <div class="b-flowbox-body">
@@ -41,6 +46,7 @@ export default {
   components: { VueSlickCarousel },
   data() {
     return {
+      instaPost: [],
       settingsInsta: {
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -67,6 +73,33 @@ export default {
       },
     };
   },
+
+  methods: {
+   
+  async getInstaPost() {
+    try {
+      var authOptions = {
+        method: "get",
+        url: `https://graph.instagram.com/me/media?fields=media_url,media_type,permalink,thumbnail_url&count=6&access_token=${this.$store.state.INSTA_TOKEN}`,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+      let response = await this.$axios(authOptions);
+      if (response.status == 200) {
+       this.instaPost = response.data.data;
+      } else {
+        throw "encountered error while fetching instagram data";
+      }
+    } catch (error) {
+      console.log("error from get insta post", error);
+    }
+  },
+  },
+
+  async fetch(){
+    this.getInstaPost();
+  }
 };
 </script>
 
