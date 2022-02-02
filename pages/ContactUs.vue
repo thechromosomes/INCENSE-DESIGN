@@ -89,7 +89,7 @@
             <li class="list-item">
               <i class="fa fa-phone fa-2x"
                 ><span class="contact-text phone"
-                  ><a href="tel:8588880111" title="Give me a call"
+                  ><a href="tel:+918588880111" title="Give me a call"
                     >8588880111</a
                   ></span
                 ></i

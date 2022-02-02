@@ -144,7 +144,7 @@
               </a>
             </section>
             <section class="bottomStickBotton call-stick">
-              <a href="tel:+8588880111" target="blank">
+              <a href="tel:+918588880111" target="blank">
                 <img src="@/assets/img/call.png" />
               </a>
             </section>
@@ -224,7 +224,7 @@ export default {
       image: "./logo.png",
       "@id": "",
       url: "www.incensedesign.in/",
-      telephone: "8588880111",
+      telephone: "+918588880111",
 
       address: {
         "@type": "PostalAddress",
