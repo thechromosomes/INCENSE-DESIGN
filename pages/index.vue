@@ -164,6 +164,7 @@
     >
       <p>Get Free Estimate</p>
     </div>
+    <WelcomePopUp v-if="welcomePopUp"/> 
   </div>
 </template>
 
@@ -174,6 +175,7 @@ import HappyCustomer from "@/components/layout/HappyCustomer.vue";
 import OurPartners from "@/components/layout/OurPartners.vue";
 import Instagram from "@/components/layout/Instagram.vue";
 import Loader from "@/components/layout/Loader.vue";
+import WelcomePopUp from "@/components/layout/welcomePopUp.vue";
 
 import { keyWord } from "@/utils/keyWord.js";
 
@@ -190,6 +192,7 @@ export default {
     HappyCustomer,
     OurPartners,
     Instagram,
+    WelcomePopUp,
   },
 
   data() {
@@ -197,6 +200,7 @@ export default {
       ThirdSection: ThirdSection,
       FirstSection: FirstSection,
       SecondSection: SecondSection,
+      welcomePopUp: false,
     };
   },
 
@@ -207,12 +211,16 @@ export default {
       });
     },
 
+    closePopUp() {
+      this.welcomePopUp = !this.welcomePopUp;
+    },
+
     toggleHomePageBannerLoaded() {
       setTimeout(() => {
         this.$store.commit("setHomePageBannerLoaded", {
           status: true,
         });
-      }, 1000);
+      }, 0);
     },
   },
 
@@ -286,6 +294,20 @@ export default {
         finalArray.push(keyWord[i].Column3);
       }
       return finalArray.join(" || ");
+    },
+  },
+
+  mounted() {},
+
+  watch: {
+    "$store.state.homePageBannerLoaded": {
+      handler(val) {
+        this.$nextTick(() => {
+          setTimeout(() => {
+            this.closePopUp();
+          }, 3000);
+        });
+      },
     },
   },
 };

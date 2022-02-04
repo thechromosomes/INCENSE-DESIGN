@@ -217,7 +217,7 @@ h6 {
 
 .bottomStickBotton {
   position: fixed;
-  bottom: 29px;
+  bottom: 32px;
   right: 0; background-color: #f44336;opacity: 1;
 }
 .bottomStickBotton.call-stick {
@@ -228,7 +228,6 @@ h6 {
   width: 31px;
   padding: 4px;filter: invert(1); opacity: 1;
   /* background: #323850; */
-  border: 1px solid #f44336 !important;
   
 }
 
