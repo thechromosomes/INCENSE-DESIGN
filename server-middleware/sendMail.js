@@ -6,6 +6,8 @@ app.use(bodyParser.json());
 
 app.post("/sendmail", async (req, res) => {
   var output;
+
+  // var emailPass = await process.env.EMAIL_PASS;
   try {
     if (req.body.emailType === "contact") {
       output = `
@@ -36,7 +38,6 @@ app.post("/sendmail", async (req, res) => {
     `;
     }
 
-    // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       port: 465,
@@ -44,8 +45,9 @@ app.post("/sendmail", async (req, res) => {
       secureConnection: true,
       auth: {
         user: "contact@incensedesign.com", // generated ethereal user
-        pass: "Officialincensemail", // generated ethereal password
+        pass: process.env.EMAIL_PASS, // generated ethereal password
       },
+
       tls: {
         rejectUnauthorized: false,
       },
@@ -64,7 +66,7 @@ app.post("/sendmail", async (req, res) => {
     // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        console.log("error >>> ",error);
+        console.log("error >>> ", error);
         res.send({
           status: false,
           message: "Error occurred while sending email",
@@ -78,6 +80,7 @@ app.post("/sendmail", async (req, res) => {
       });
     });
   } catch (error) {
+    console.log("error >>> ", error);
     res.send({
       status: false,
       message: "Error occurred while sending email",

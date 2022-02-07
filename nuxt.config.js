@@ -1,4 +1,5 @@
 export default {
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s - INCENSE DESIGN",
@@ -76,7 +77,7 @@ export default {
     { src: "@plugins/toast", mode: "client" },
   ],
 
-  modules: ["@nuxtjs/axios"],
+  modules: ["@nuxtjs/axios", "nuxt-leaflet"],
 
   // server  middleware for back end api
   // a server middleware that runs only server site

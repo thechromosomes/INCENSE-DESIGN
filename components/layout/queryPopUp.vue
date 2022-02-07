@@ -136,7 +136,7 @@ export default {
           title: "Oops...",
           text: "Something went wrong!",
           timer: 10000,
-          text: "Can not sent the message, :(",
+          text: "Can not sent the message :(",
         });
       }
     },

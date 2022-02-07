@@ -44,7 +44,7 @@
                     </span>
                     <div class="main-banner-text">
                       <p class="module2-title elementskit-section-title">
-                        INTERIOR DESIGN
+                        RESIDENTIAL DESIGN
                       </p>
                     </div>
                   </div>
@@ -72,7 +72,7 @@
                     </span>
                     <div class="main-banner-text">
                       <p class="module2-title elementskit-section-title">
-                        OFFICE DESIGN
+                        OFFICIAL DESIGN
                       </p>
                     </div>
                   </div>
@@ -165,6 +165,9 @@
       <p>Get Free Estimate</p>
     </div>
     <WelcomePopUp v-if="welcomePopUp"/> 
+       <section class="maps-home">
+      <Maps />
+    </section>
   </div>
 </template>
 
@@ -176,6 +179,7 @@ import OurPartners from "@/components/layout/OurPartners.vue";
 import Instagram from "@/components/layout/Instagram.vue";
 import Loader from "@/components/layout/Loader.vue";
 import WelcomePopUp from "@/components/layout/welcomePopUp.vue";
+import Maps from "@/components/layout/Maps.vue";
 
 import { keyWord } from "@/utils/keyWord.js";
 
@@ -187,6 +191,7 @@ import {
 export default {
   components: {
     Card,
+    Maps,
     Loader,
     Testimonial,
     HappyCustomer,
@@ -297,15 +302,13 @@ export default {
     },
   },
 
-  mounted() {},
-
   watch: {
     "$store.state.homePageBannerLoaded": {
       handler(val) {
         this.$nextTick(() => {
           setTimeout(() => {
             this.closePopUp();
-          }, 3000);
+          }, 8000);
         });
       },
     },

@@ -1,10 +1,10 @@
 export const state = () => ({
   queryUpPopUp: false,
   // BASE_URL: "http://localhost:3001",
-  BASE_URL: "https://incensedesign.com",
-  INSTA_TOKEN:
-    "IGQVJWd1hJdG5uQ1NMUV90Q25jQ3VsYUF1ZAmpRdGliY1lIMVFSYXBtdDBiTWNTSW1kQ3l4YjJHc3UxREhCVHp6WTRqbTZALendrQ2prb2NwdjNVZAF9Mc2FFWm4wOGN6OFNKdHJqVHRFQTVJNm9mamJwUgZDZD",
+  BASE_URL: process.env.BASE_URL,
+  INSTA_TOKEN:process.env.INSTA_TOKEN,
   homePageBannerLoaded: false,
+  EMAIL_PASS: process.env.EMAIL_PASS,
 
   pageLoader: false,
 });

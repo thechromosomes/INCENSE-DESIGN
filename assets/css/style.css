@@ -1,11 +1,9 @@
-/* 
-Theme Name: Topper Bootstrap Theme 
-Author: WebThemez.com
-License: https://webthemez.com/license 
-*/
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/* disable images and data */
+/* img {
+  display: none !important;
+} */
+
+/* end disable images and data */
 
 /* for the query bouncing animation */
 .bounce-enter-active {
@@ -74,6 +72,10 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+.maps-home {
+  padding-bottom: 10px !important;
 }
 
 #logo img {
@@ -218,17 +220,22 @@ h6 {
 .bottomStickBotton {
   position: fixed;
   bottom: 32px;
-  right: 0; background-color: #f44336;opacity: 1;
+  right: 0;
+  background-color: #f44336;
+  opacity: 1;
 }
 .bottomStickBotton.call-stick {
   bottom: 50px;
 }
-.bottomStickBotton.call-stick{ bottom: 66px;}
+.bottomStickBotton.call-stick {
+  bottom: 66px;
+}
 .bottomStickBotton img {
   width: 31px;
-  padding: 4px;filter: invert(1); opacity: 1;
+  padding: 4px;
+  filter: invert(1);
+  opacity: 1;
   /* background: #323850; */
-  
 }
 
 /* #header #logo h1 {

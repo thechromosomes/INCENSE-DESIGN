@@ -1,19 +1,28 @@
 <template>
   <div>
     <div class="container">
-     
       <section class="customer-logos slider testimonial">
-         <h2>Happy Customers</h2>
+        <h2>Happy Customers</h2>
         <Slick :options="slickOptions">
-          <div class="slide" v-for="(item, index) in 9" :key="index">
-              <div class="card_item_testi">
-            <img
-              src="~/assets/img/man.png" alt="man">
-        
-            <h2>Rahul Bhatnagar</h2>
-            <p>Very high quality plywoods with many designs. Also, they are very experienced in interior designing, submitting the projects on time. Also, the nature of the owner is very friendly.</p>
-            <p></p>
-              </div>
+          <div
+            class="slide"
+            v-for="(item, index) in happyCustomer"
+            :key="index"
+          >
+            <div class="card_item_testi">
+              <img
+                :src="`https://ui-avatars.com/api/?name=${
+                  item.name.split('Mr')[1]
+                } `"
+                alt="man"
+              />
+
+              <h2>{{ item.name }}</h2>
+              <p>
+                {{ item.description }}
+              </p>
+              <p></p>
+            </div>
           </div>
         </Slick>
       </section>
@@ -36,7 +45,7 @@ export default {
         arrows: false,
         dots: true,
         pauseOnHover: false,
-        infinite:false,
+        infinite: false,
         responsive: [
           {
             breakpoint: 768,
@@ -52,6 +61,30 @@ export default {
           },
         ],
       },
+
+      happyCustomer: [
+        {
+          name: "Mr. Anoop (Sunworld Arista)",
+          description:
+            "Very good quality plywoods with many designs. Also, they are very experienced in interior designing, submitting the projects on time. Also, the nature of the owner is very friendly.",
+        },
+        {
+          name: "Mr katueiya Astalis",
+          description:
+            "People are very friendly and helpful. They are very good in their work. I like the the way the work is done. I am very happy with the work done by them. I will recommend them to all my friends and family. Thank you.",
+        },
+
+        {
+          name: "Mr Rakesh Alphathum",
+          description:
+            " I was very confused about the things but they were very helpful. They are very good in their work. I like the the way the work is done. I am very happy with the work done by them. simply love it" ,
+        },
+        {
+          name: "Mr Honey Katiyal Astralis",
+          description:
+            "We build our home only once. so I wanted everything perfect and aesthetic and no doubt, the team is good and they are very good in their work. I like the the way the work is done.",
+        },
+      ],
     };
   },
 };
@@ -69,7 +102,9 @@ h2 {
 }
 
 .slick-slide img {
-  width: 100px; border-radius: 100%; margin:  0 auto;
+  width: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
 }
 
 .slick-slider {
@@ -161,19 +196,33 @@ h2 {
 .slick-arrow.slick-hidden {
   display: none;
 }
-.customer-logos.slider h2{text-transform: capitalize;
-    color: #323850;
-    font-family: "Lato", Sans-serif;
-    font-size: 46px;
-    font-weight: bold}
-    .card_item_testi h2{font-size: 19px!important;}
-    .customer-logos.slider{ padding: 60px 0px 0px 0px;}
-    .card_item_testi{ background-color: #fff; margin-right: 20px;padding: 20px;border:1px solid rgb(204 204 204 / 19%);}
-    .testimonial{ margin-bottom: 70px;}
-    
+.customer-logos.slider h2 {
+  text-transform: capitalize;
+  color: #323850;
+  font-family: "Lato", Sans-serif;
+  font-size: 46px;
+  font-weight: bold;
+}
+.card_item_testi h2 {
+  font-size: 19px !important;
+}
+.customer-logos.slider {
+  padding: 60px 0px 0px 0px;
+}
+.card_item_testi {
+  background-color: #fff;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid rgb(204 204 204 / 19%);
+}
+.testimonial {
+  margin-bottom: 70px;
+}
+
 .testimonial p {
-    color: #8c8c8c;
-    font-weight: 600;
-    letter-spacing: 0px; text-align: center;
+  color: #8c8c8c;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-align: center;
 }
 </style>
