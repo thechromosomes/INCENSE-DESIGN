@@ -80,7 +80,7 @@ export default {
             " I was very confused about the things but they were very helpful. They are very good in their work. I like the the way the work is done. I am very happy with the work done by them. simply love it" ,
         },
         {
-          name: "Mr Honey Katiyal Astralis",
+          name: "Mr vinay kumar",
           description:
             "We build our home only once. so I wanted everything perfect and aesthetic and no doubt, the team is good and they are very good in their work. I like the the way the work is done.",
         },
