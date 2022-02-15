@@ -11,9 +11,7 @@
           >
             <div class="card_item_testi">
               <img
-                :src="`https://ui-avatars.com/api/?name=${
-                  item.name.split('Mr')[1]
-                } `"
+                :src="`https://ui-avatars.com/api/?name=${item.shortName} `"
                 alt="man"
               />
 
@@ -64,23 +62,30 @@ export default {
 
       happyCustomer: [
         {
-          name: "Mr Anoop (Sunworld Arista)",
+          name: "Mr. Anoop Rawat - Sunworld Arista (Residential)",
+          shortName: "AR",
           description:
             "Very good quality plywoods with many designs. Also, they are very experienced in interior designing, submitting the projects on time. Also, the nature of the owner is very friendly.",
         },
         {
-          name: "Mr katueiya Astalis",
+          name: "Mrs. Sana Parveen Greater kailash -1 (Residential)",
+          shortName: "SP",
+
           description:
             "People are very friendly and helpful. They are very good in their work. I like the the way the work is done. I am very happy with the work done by them. I will recommend them to all my friends and family. Thank you.",
         },
 
         {
-          name: "Mr Rakesh Alphathum",
+          name: "Mr. Dharamveer Kathuria - Supertech, Astralis Noida (commercial)",
+          shortName: "DK",
+
           description:
             " I was very confused about the things but they were very helpful. They are very good in their work. I like the the way the work is done. I am very happy with the work done by them. simply love it",
         },
         {
-          name: "Mr vinay kumar",
+          name: "Mr. Rakesh Bahuguna - Bhutani, Alphathum Noida (commercial)",
+          shortName: "RB",
+
           description:
             "We build our home only once. so I wanted everything perfect and aesthetic and no doubt, the team is good and they are very good in their work. I like the the way the work is done.",
         },

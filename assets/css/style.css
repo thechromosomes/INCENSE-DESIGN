@@ -17,12 +17,31 @@
 }
 
 .queryPopUpButton {
+  font-size: 20px;
   text-align: center;
   color: #f44436;
   text-decoration: underline;
   margin: auto;
-  font-weight: 210px;
   font-weight: 1000;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #f44436;
+  width: 8px;
+  border-radius: 6px;
+}
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 @keyframes bounce-in {
   0% {
@@ -112,7 +131,18 @@ h6 {
 .module2-title {
   color: #f44436;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 19px;
+}
+
+.card-text {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+  font-size: 15px !important;
+  font-weight: 600 !important;
 }
 
 .module2-back {

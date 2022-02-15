@@ -7,8 +7,18 @@
             <h1 class="display-4">About us</h1>
             <p class="lead text-muted mb-0">You choose , we execute.</p>
             <p class="lead text-muted">
-              We are into the world of Designer who try to fuel the empty walls
-              with Creative Ideas.
+              ID Interior Design is a full-service interior design company since
+              2012, specialized in both residential and commercial design.
+              Moreover we provide a quick refresh of furniture and other decor
+              items, or an extensive whole-house renovation, we ensure that the
+              project runs smoothly and gives you the best results possible. Our
+              commitment is to deliver the best designs that fulfil client
+              expectations. Our goal is always to create designs tailored to our
+              clients The one stop destination for all kind of conceptualization,
+              designing contracting, implementing work with the best knowledge
+              of day to da changing trends ID interior is one of the leading
+              concept designing company established from 2010 and have completed
+              more than 50+ projects.
             </p>
           </div>
           <div class="col-lg-6 d-none d-lg-block">

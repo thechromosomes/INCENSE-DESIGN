@@ -1,14 +1,20 @@
 <template>
   <div>
-    <div id="Gallery">
-      <div id="List">
-        <div
-          v-for="(img, index) in images"
-          id="Item"
-          :key="index"
-          v-bind:style="{ 'background-image': 'url(' + images[index] + ')' }"
-        >
-          <h1 v-on:click="showSource(index)"></h1>
+    <div id="gallery">
+      <img
+        v-for="(img, index) in images"
+        id="Item"
+        :key="index"
+        v-lazy="images[index]"
+        class="img-responsive"
+      />
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body"></div>
         </div>
       </div>
     </div>
@@ -39,6 +45,7 @@ export default {
       });
     },
   },
+  
 
   async fetch() {
     function importAll(r) {
@@ -54,119 +61,68 @@ export default {
 </script> 
  
 <style scoped>
-/* body {
-  background-color: gray;
-  margin: 0px;
-} */
-#List {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 600px;
-  margin: 0px;
-  padding: 78px;
+h1 {
+  font-family: Satisfy;
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  padding: 1%;
 }
-#Item {
-  background-attachment: scroll;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: auto;
+#gallery {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 2;
+
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  margin-top: 70px;
+}
+@media (max-width: 1200px) {
+  #gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  #gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 2;
+  }
+}
+#gallery img,
+#gallery video {
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 0px;
-  position: relative; /* for #Item button {position: absolute;}*/
+  margin: 4% auto;
+  box-shadow: -3px 5px 15px #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
-#Item h1 {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
-  letter-spacing: 10px;
-  text-align: center;
-  line-height: 600px;
-  background-color: transparent;
+.modal-img,
+.model-vid {
   width: 100%;
-  height: 600px;
-  margin: 0px;
-  transition-duration: 0.3s;
-  cursor: default;
+  height: auto;
 }
-#Item button {
-  color: black;
-  font-family: "Roboto", sans-serif;
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  border: none;
-  cursor: pointer;
-}
-
-#Actions {
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-  display: flex;
-  flex-direction: row;
-}
-#Shuffle {
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
-  text-align: center;
-  background-color: white;
-  width: 50%;
-  height: 100px;
-  border: none;
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-#Add {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  text-align: center;
-  background-color: gray;
-  width: 25%;
-  height: 98px;
-  border: none;
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-
-#Shuffle:hover {
-  color: white;
-  background-color: black;
-}
-#Item h1:hover {
-  letter-spacing: 1px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#Item:hover {
-  filter: hue-rotate(50deg);
-}
-/* =========== */
-@media only screen and (max-width: 767px) {
-  #List {
-    grid-template-columns: 100% 100%;
-    margin-bottom: 30px;
-    background-color: #fff;
-    padding: 0px;
-  }
-  #List {
-    display: block;
-    margin-top: 80px;
-
-  }
-  #Item {
-    margin-bottom: 20px;
-    height: 324px;
-    background-size: contain;
-  }
+.modal-body {
+  padding: 0px;
 }
 </style>

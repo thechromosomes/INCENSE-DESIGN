@@ -2,7 +2,7 @@
   <div class="container mainContainer" v-if="instaPost.length">
     <!-- instagram @ -->
     <div class="instagram-section">
-      <h3 class="title">@IncenseDesign</h3>
+      <h3 class="title">@idinterior195</h3>
       <div class="slider-wrapper slider_box slider_arrow">
         <VueSlickCarousel ref="slick" :options="settingsInsta">
           <template v-for="(image, imgIndex) in instaPost">
@@ -31,7 +31,7 @@
       </div>
       <div class="b-flowbox-body">
         <p>
-          Tag your pictures with <b>@IncenseDesign</b> and appear at our feed!
+          Tag your pictures with <b>@idinterior195</b> and appear at our feed!
         </p>
       </div>
     </div>

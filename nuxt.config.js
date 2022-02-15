@@ -1,5 +1,4 @@
 export default {
-  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s - INCENSE DESIGN",
@@ -74,7 +73,8 @@ export default {
 
   plugins: [
     { src: "~/plugins/jsonld", defer: true },
-    { src: "@plugins/toast", mode: "client" },
+    { src: "@/plugins/toast", mode: "client" },
+    { src: "@/plugins/lazyLoad", defer: true },
   ],
 
   modules: ["@nuxtjs/axios", "nuxt-leaflet"],

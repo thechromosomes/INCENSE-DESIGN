@@ -18,7 +18,7 @@
         <h2 class="ekit-heading--title elementskit-section-title">
           INCENSE DESIGN
         </h2>
-        <small>Architecture, Interior, Furniture</small>
+        <small>Architecture | Interior | Furniture</small>
         <a
           class="
             elementskit-btn
@@ -34,7 +34,7 @@
     <section class="interiirro">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 img-box">
+          <div class="col-sm-4 img-box">
             <div class="card card-flip h-100">
               <div class="card-front text-white bg-dark">
                 <div class="card-body">
@@ -44,7 +44,7 @@
                     </span>
                     <div class="main-banner-text">
                       <p class="module2-title elementskit-section-title">
-                        RESIDENTIAL DESIGN
+                        RESIDENTIAL INTERIOR DESIGN
                       </p>
                     </div>
                   </div>
@@ -52,17 +52,23 @@
               </div>
               <div class="card-back bg-white">
                 <div class="card-body module2-back">
-                  <h3 class="card-title">Home Interior</h3>
+                  <h3 class="card-title">RESIDENTIAL INTERIOR DESIGN</h3>
                   <p class="card-text">
-                    Suprise... </br> Explore our interior design services. We have a wide range of interior design solutions for your home.
+                    Every home is a unique expression of its homeowners. We
+                    ensure your house design is in keeping with your distinct
+                    tastes. Everything, from creating furniture to choosing
+                    furnishings and lighting, is meant to reflect your sense of
+                    design.
                   </p>
-                  <NuxtLink to="/gallery" class="btn btn-outline-secondary">Explore</NuxtLink>
+                  <NuxtLink to="/gallery" class="btn btn-outline-secondary"
+                    >Explore</NuxtLink
+                  >
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-sm-6 img-box">
+          <div class="col-sm-4 img-box">
             <div class="card card-flip h-100">
               <div class="card-front text-white bg-dark">
                 <div class="card-body">
@@ -72,7 +78,7 @@
                     </span>
                     <div class="main-banner-text">
                       <p class="module2-title elementskit-section-title">
-                        OFFICIAL DESIGN
+                        COMMERCIAL/OFFICIAL INTERIOR DESIGN
                       </p>
                     </div>
                   </div>
@@ -80,11 +86,49 @@
               </div>
               <div class="card-back bg-white">
                 <div class="card-body module2-back">
-                  <h3 class="card-title">office Interior</h3>
+                  <h3 class="card-title">
+                    COMMERCIAL/OFFICIAL INTERIOR DESIGN
+                  </h3>
                   <p class="card-text">
-                    Suprise... </br> We are into best office interior design solutions. We have a wide range of interior design solutions for your office.
+                    From the right furnishings & furniture in diverse colors to
+                    a variety of décor items that dress up your office space.
+                    Find what you're looking for, to get your office interior
+                    design just right.
                   </p>
-                  <NuxtLink to="/gallery" class="btn btn-outline-secondary ">Explore</NuxtLink>
+                  <NuxtLink to="/gallery" class="btn btn-outline-secondary"
+                    >Explore</NuxtLink
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-4 img-box">
+            <div class="card card-flip h-100">
+              <div class="card-front text-white bg-dark">
+                <div class="card-body">
+                  <div class="opacity-modul2">
+                    <span>
+                      <img src="@/static/furniture.gif" alt="" />
+                    </span>
+                    <div class="main-banner-text">
+                      <p class="module2-title elementskit-section-title">
+                        FURNITURE
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-back bg-white">
+                <div class="card-body module2-back">
+                  <h3 class="card-title">FURNITURE</h3>
+                  <p class="card-text">
+                    Get completely personalized furniture to complement the
+                    aesthetic of your space.
+                  </p>
+                  <NuxtLink to="/gallery" class="btn btn-outline-secondary"
+                    >Explore</NuxtLink
+                  >
                 </div>
               </div>
             </div>
@@ -120,12 +164,10 @@
       >
         <div class="elementor-inner">
           <div class="elementor-section-wrap">
-
-
             <Card :payload="FirstSection" />
 
             <div class="complte-intro-compo">
-            <Card :payload="SecondSection"></card>
+              <Card :payload="SecondSection"></Card>
             </div>
 
             <Testimonial />
@@ -164,8 +206,8 @@
     >
       <p>Get Free Estimate</p>
     </div>
-    <WelcomePopUp v-if="welcomePopUp"/> 
-       <section class="maps-home">
+    <WelcomePopUp v-if="welcomePopUp" />
+    <section class="maps-home">
       <Maps />
     </section>
   </div>

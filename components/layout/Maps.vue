@@ -12,9 +12,7 @@
                 :key="index"
                 @click="renderMap(index)"
               >
-                <a id="link1"  data-toggle="tab"
-                  >address {{ index + 1 }}</a
-                >
+                <a id="link1" data-toggle="tab">address {{ index + 1 }}</a>
                 <p>{{ item.name }}</p>
               </li>
             </ul>
@@ -22,9 +20,9 @@
           <div class="col-sm-9 col-12">
             <div
               id="map_canvas"
-              style="height: 250px; border: thin solid black"
+              style="height: 350px; border: thin solid black"
             >
-              <div id="map-wrap" style="height: 248px">
+              <div id="map-wrap" style="height: 348px">
                 <client-only>
                   <l-map :zoom="15" :center="markers[activeMarker].location">
                     <l-tile-layer
@@ -58,6 +56,10 @@ export default {
         {
           location: [28.4152368, 77.0793314],
           name: "2nd Floor, H 11, A/26D, Golf Course Ext Rd, Gurugram, Haryana 122011",
+        },
+        {
+          location: [28.513529, 77.4067216],
+          name: "Shop no 4 First floor Raghunath Mandir Near Alphathum Bhutani sector 90 Noida Uttar Pradesh 201305",
         },
       ],
     };
