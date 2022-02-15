@@ -64,7 +64,7 @@ export default {
 
       happyCustomer: [
         {
-          name: "Mr. Anoop (Sunworld Arista)",
+          name: "Mr Anoop (Sunworld Arista)",
           description:
             "Very good quality plywoods with many designs. Also, they are very experienced in interior designing, submitting the projects on time. Also, the nature of the owner is very friendly.",
         },
@@ -77,7 +77,7 @@ export default {
         {
           name: "Mr Rakesh Alphathum",
           description:
-            " I was very confused about the things but they were very helpful. They are very good in their work. I like the the way the work is done. I am very happy with the work done by them. simply love it" ,
+            " I was very confused about the things but they were very helpful. They are very good in their work. I like the the way the work is done. I am very happy with the work done by them. simply love it",
         },
         {
           name: "Mr Honey Katiyal Astralis",
