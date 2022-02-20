@@ -78,7 +78,7 @@
                     </span>
                     <div class="main-banner-text">
                       <p class="module2-title elementskit-section-title">
-                        COMMERCIAL/OFFICIAL INTERIOR DESIGN
+                        COMMERCIAL/OFFICIAL DESIGN
                       </p>
                     </div>
                   </div>
@@ -206,7 +206,7 @@
     >
       <p>Get Free Estimate</p>
     </div>
-    <WelcomePopUp v-if="welcomePopUp" />
+    <WelcomePopUp v-if="welcomePopUp && false" />
     <section class="maps-home">
       <Maps />
     </section>

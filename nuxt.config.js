@@ -67,12 +67,20 @@ export default {
   components: true,
 
   plugins: [
-    { src: "~/plugins/jsonld", defer: true },
+    { src: "@/plugins/jsonld", defer: true },
     { src: "@/plugins/toast", mode: "client" },
     { src: "@/plugins/lazyLoad", defer: true },
   ],
 
-  modules: ["@nuxtjs/axios", "nuxt-leaflet"],
+  modules: ["@nuxtjs/axios", "nuxt-leaflet", "@nuxtjs/gtm"],
+
+  // google tag manger
+  gtm: {
+    id: "GTM-PVMFTKB",
+    enabled: true,
+    debug: true,
+    loadScript: true,
+  },
 
   // server  middleware for back end api
   // a server middleware that runs only server site
