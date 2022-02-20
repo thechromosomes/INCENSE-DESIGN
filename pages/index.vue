@@ -206,7 +206,8 @@
     >
       <p>Get Free Estimate</p>
     </div>
-    <WelcomePopUp v-if="welcomePopUp && false" />
+    <!-- <WelcomePopUp v-if="welcomePopUp" /> -->
+
     <section class="maps-home">
       <Maps />
     </section>
