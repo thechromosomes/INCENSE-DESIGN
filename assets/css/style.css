@@ -1475,3 +1475,11 @@ p.help-block li {
   font-weight: 600;
   padding: 9px 0;
 }
+
+/* welcome swal alert */
+.swal2-content {
+  margin: 0px !important;
+}
+.swal2-input{
+  margin: 2px !important;
+}
