@@ -1,6 +1,7 @@
 const bodyParser = require("body-parser");
 const app = require("express")();
 const nodemailer = require("nodemailer");
+const sgMail = require("@sendgrid/mail");
 
 app.use(bodyParser.json());
 
@@ -39,12 +40,12 @@ app.post("/sendmail", async (req, res) => {
     }
 
     let transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
-      port: 465,
+      host: "smtp.sendgrid.net",
+      port: 587,
       // secure: false, // true for 465, false for other ports
       secureConnection: true,
       auth: {
-        user: "contact@incensedesign.com", // generated ethereal user
+        user: "apikey", // generated ethereal user
         pass: process.env.EMAIL_PASS, // generated ethereal password
       },
 
@@ -56,7 +57,7 @@ app.post("/sendmail", async (req, res) => {
     // setup email data with unicode symbols
     let dummy = Math.floor(Math.random() * (1000 - 100) + 100) / 100;
     let mailOptions = {
-      from: `Query${dummy}@incensedesign.com`, // sender address
+      from: `Contact@incensedesign.com`, // sender address
       to: "contact@incensedesign.com", // list of receivers
       subject: `Incense Design ${req.body.emailType}`, // Subject line
       text: `From ${req.body.name} `, // plain text body
@@ -79,6 +80,24 @@ app.post("/sendmail", async (req, res) => {
         message: "Email has been sent",
       });
     });
+
+    // sgMail.setApiKey(process.env.EMAIL_PASS);
+    // const msg = mailOptions;
+    // sgMail
+    //   .send(msg)
+    //   .then(() => {
+    //     res.send({
+    //       status: true,
+    //       message: "Email has been sent",
+    //     });
+    //   })
+    //   .catch((error) => {
+    //     console.log("error catch >>> ", error);
+    //     res.send({
+    //       status: false,
+    //       message: "Error occurred while sending email",
+    //     });
+    //   });
   } catch (error) {
     console.log("error >>> ", error);
     res.send({
