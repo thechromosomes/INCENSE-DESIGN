@@ -22,6 +22,10 @@ export const mutations = {
   updatePageLoader(state, { display }) {
     state.pageLoader = display;
   },
+
+  updateBaseUrl(state, { url }) {
+    state.BASE_URL = url;
+  }
 };
 
 export const actions = {

@@ -1,8 +1,6 @@
 const bodyParser = require("body-parser");
 const app = require("express")();
 const nodemailer = require("nodemailer");
-const sgMail = require("@sendgrid/mail");
-
 app.use(bodyParser.json());
 
 app.post("/sendmail", async (req, res) => {

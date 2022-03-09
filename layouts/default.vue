@@ -9,7 +9,6 @@
       </transition>
       <nuxt />
     </div>
-  
   </div>
 </template>
 
@@ -23,6 +22,10 @@ export default {
     Header,
     Footer,
     QueryPopUp,
+  },
+  async mounted() {
+    console.log("fetch", window.location.origin);
+    this.$store.commit("updateBaseUrl", { url: window.location.origin });
   },
 };
 </script>
