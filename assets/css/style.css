@@ -1480,6 +1480,46 @@ p.help-block li {
 .swal2-content {
   margin: 0px !important;
 }
-.swal2-input{
+.swal2-input {
   margin: 2px !important;
+}
+
+/* button animate */
+
+.animate {
+  animation: jiggle 1s linear infinite;
+}
+
+@keyframes jiggle {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, 1deg);
+  }
+
+  30% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 1.5deg);
+  }
+
+  45% {
+    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -1.5deg);
+  }
+
+  60% {
+    transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1, 1deg);
+  }
+
+  75% {
+    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -2deg);
+  }
+
+  90% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }

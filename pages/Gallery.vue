@@ -1,13 +1,30 @@
 <template>
   <div>
+    <div id="button_div">
+      <button
+        class="btn btn-primary image_button"
+        @click="updateImage('result')"
+      >
+        The result
+      </button>
+      <button
+        class="btn btn-primary image_button"
+        @click="updateImage('Inprogress')"
+      >
+        The process
+      </button>
+    </div>
     <div id="gallery">
-      <img
-        v-for="(img, index) in images"
-        id="Item"
-        :key="index"
-        v-lazy="images[index]"
-        class="img-responsive"
-      />
+      <template v-for="(img, index) in images">
+        <img
+          v-if="img.includes(toDisplay)"
+          id="Item"
+          :key="index"
+          @click="showSource(index)"
+          v-lazy="images[index]"
+          class="img-responsive"
+        />
+      </template>
     </div>
 
     <div id="myModal" class="modal fade" role="dialog">
@@ -28,6 +45,7 @@ export default {
     return {
       newItem: { name: "Name of new IMG", path: "Path to new IMG" },
       images: [],
+      toDisplay: "Inprogress",
     };
   },
 
@@ -44,8 +62,10 @@ export default {
         // timer: 10000,
       });
     },
+    updateImage(toDisplay) {
+      this.toDisplay = toDisplay;
+    },
   },
-  
 
   async fetch() {
     function importAll(r) {
@@ -76,7 +96,7 @@ h1 {
   -webkit-column-gap: 20px;
   -moz-column-gap: 20px;
   column-gap: 20px;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 @media (max-width: 1200px) {
   #gallery {
@@ -124,5 +144,15 @@ h1 {
 }
 .modal-body {
   padding: 0px;
+}
+
+#button_div {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn.btn-primary.image_button {
+  width: 48%;
+  padding: 10px;
 }
 </style>

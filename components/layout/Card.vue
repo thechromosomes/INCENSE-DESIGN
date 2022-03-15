@@ -178,7 +178,9 @@
       </div>
     </div>
     <div class="queryPopUpButton">
-      <a @click.prevent="togglePopUp()">Get Free Quote</a>
+      <a @click.prevent="togglePopUp()"
+        ><button class="animate btn btn-primary">Free Quote</button>
+      </a>
     </div>
   </section>
 </template>

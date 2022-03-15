@@ -344,7 +344,13 @@ export default {
       return finalArray.join(" || ");
     },
   },
-
+mounted(){
+  this.$nextTick(() => {
+    setTimeout(() => {
+      this.toggleHomePageBannerLoaded();
+    }, 1000);
+  });
+},
   watch: {
     "$store.state.homePageBannerLoaded": {
       handler(val) {
