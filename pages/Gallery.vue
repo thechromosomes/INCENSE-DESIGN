@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="button_div">
-      <button
+      <!-- <button
         class="btn btn-primary image_button"
         @click="updateImage('result')"
       >
@@ -12,7 +12,7 @@
         @click="updateImage('Inprogress')"
       >
         The process
-      </button>
+      </button> -->
     </div>
     <div id="gallery">
       <template v-for="(img, index) in images">
@@ -38,14 +38,13 @@
   </div>
 </template>
 
-
 <script>
 export default {
   data() {
     return {
       newItem: { name: "Name of new IMG", path: "Path to new IMG" },
       images: [],
-      toDisplay: "Inprogress",
+      toDisplay: "result",
     };
   },
 
@@ -78,8 +77,8 @@ export default {
     this.images = images;
   },
 };
-</script> 
- 
+</script>
+
 <style scoped>
 h1 {
   font-family: Satisfy;

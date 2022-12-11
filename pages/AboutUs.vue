@@ -5,20 +5,55 @@
         <div class="row h-100 align-items-center py-5">
           <div class="col-lg-6">
             <h1 class="display-4">About us</h1>
-            <p class="lead text-muted mb-0">You choose , we execute.</p>
+            <h3 class="">You choose , we execute.</h3>
             <p class="lead text-muted">
-              ID Interior Design is a full-service interior design company since
+              <b>Incense Design</b>
+               is a full-service interior design company since
               2012, specialized in both residential and commercial design.
               Moreover we provide a quick refresh of furniture and other decor
-              items, or an extensive whole-house renovation, we ensure that the
-              project runs smoothly and gives you the best results possible. Our
-              commitment is to deliver the best designs that fulfil client
-              expectations. Our goal is always to create designs tailored to our
-              clients The one stop destination for all kind of conceptualization,
-              designing contracting, implementing work with the best knowledge
-              of day to da changing trends ID interior is one of the leading
-              concept designing company established from 2010 and have completed
-              more than 50+ projects.
+              items, or an extensive whole-space renovation/interior
+              architecture, we enusre that the project runs smoothly and gives
+              our client the best results possible. Our commitment is to deliver
+              the best designs that fulfill client expectations. Our goal is to
+              create a grandeur space that is unique personal styles and
+              practical needs.
+
+              <h3>Office Interior Design and Lighting Solutions</h3>
+               The design and décor
+              of any office should create a balance between comfort and style
+              while facilitating creativity and increasing employee morale.
+              Though we strive to attain just that, our team of supremely
+              talented designers also focus on curating office spaces that are
+              welcoming, pleasant and display remarkable interior design
+              solutions. From designing offices for renowned developers to
+              well-known firms, our designs are known to evoke a sense of
+              timelessness and tranquillity. We work towards creating designs
+              that not only encourages productivity among employees but help
+              create a good impression for the firm while dealing with existing
+              as well as new clients. From accumulating natural light to
+              integrating vibrant colours, greenery, open layouts, touchless
+              technology, and intelligent lighting solution, we create designs
+              that are truly distinct, elegant and inspiring. We analyze your
+              requirement and work towards creating an ambience that provides
+              you with an immaculate and comfortable work experience.
+            <h3>Luxury Residential Interior Designing Services </h3>
+              Luxury Residential
+              interior design is all about stylish, thoughtful and comforting
+              choices. Our interiors denote a perfect interpretation of
+              modernity concocted with traditional values of architecture. We
+              incorporate designs that effortlessly balance luxury and comfort
+              while accommodating the client’s personal style. Our work presents
+              an eclectic vibe to residents through detailed concept planning
+              that inculcates the contemporary design principles into the
+              interiors of the space. Our team of professional designers ensure
+              complete integration of design, project management, and on-site
+              execution. Every single element that brings a room together is
+              taken into careful consideration. At Incense Design, we guarantee
+              your lux lifestyle and design aspirations are attained. Our
+              designers strive to deliver a home that incorporates aesthetically
+              pleasing designs, stunning lighting fixtures, bespoke furniture,
+              and fabulous works of art. Our goal is to create a grandeur space
+              that you truly enjoy coming back to.
             </p>
           </div>
           <div class="col-lg-6 d-none d-lg-block">

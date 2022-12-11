@@ -1,4 +1,4 @@
-const bodyParser = require("body-parser");
+  const bodyParser = require("body-parser");
 const app = require("express")();
 const nodemailer = require("nodemailer");
 app.use(bodyParser.json());
@@ -12,8 +12,8 @@ app.post("/sendmail", async (req, res) => {
       output = `
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
-    <ul>  
-     
+    <ul>
+
      <li>Name: ${req.body.name}</li>
       <li>Email: ${req.body.email}</li>
       <li>Phone: ${req.body.phone}</li>
@@ -27,8 +27,8 @@ app.post("/sendmail", async (req, res) => {
       output = `
     <p>You have a new contact request (enquiry)</p>
     <h3>Contact Details</h3>
-    <ul>  
-     
+    <ul>
+
      <li>Name: ${req.body.name}</li>
       <li>Phone: ${req.body.phone}</li>
     </ul>
@@ -41,7 +41,7 @@ app.post("/sendmail", async (req, res) => {
       host: "smtp.sendgrid.net",
       port: 587,
       // secure: false, // true for 465, false for other ports
-      secureConnection: true,
+      secure: false,
       auth: {
         user: "apikey", // generated ethereal user
         pass: process.env.EMAIL_PASS, // generated ethereal password
