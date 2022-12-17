@@ -6,7 +6,7 @@
           <div class="col-lg-6">
             <h1 class="display-4">About us</h1>
             <h3 class="">You choose , we execute.</h3>
-            <p class="lead text-muted">
+            <div>
               <b>Incense Design</b>
                is a full-service interior design company since
               2012, specialized in both residential and commercial design.
@@ -18,7 +18,7 @@
               create a grandeur space that is unique personal styles and
               practical needs.
 
-              <h3>Office Interior Design and Lighting Solutions</h3>
+              <h3 style="margin-top: 15px;" > Office Interior Design and Lighting Solutions</h3>
                The design and décor
               of any office should create a balance between comfort and style
               while facilitating creativity and increasing employee morale.
@@ -36,7 +36,9 @@
               that are truly distinct, elegant and inspiring. We analyze your
               requirement and work towards creating an ambience that provides
               you with an immaculate and comfortable work experience.
-            <h3>Luxury Residential Interior Designing Services </h3>
+
+            <h3 style="margin-top: 15px;">Luxury Residential Interior Designing Services </h3>
+
               Luxury Residential
               interior design is all about stylish, thoughtful and comforting
               choices. Our interiors denote a perfect interpretation of
@@ -54,7 +56,7 @@
               pleasing designs, stunning lighting fixtures, bespoke furniture,
               and fabulous works of art. Our goal is to create a grandeur space
               that you truly enjoy coming back to.
-            </p>
+            </div>
           </div>
           <div class="col-lg-6 d-none d-lg-block">
             <img
@@ -63,6 +65,37 @@
               class="img-fluid"
             />
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light py-5">
+      <div class="container py-5">
+        <div class="row mb-4 d-flex justify-content-center text-center">
+          <div class="col-lg-5">
+            <h2 class="display-4 font-weight-light">Client Feedback</h2>
+          </div>
+        </div>
+
+        <div class="row text-center d-flex justify-content-center">
+          <!-- Team item-->
+
+          <div
+            class="col-xl-12"
+          >
+            <div class="">
+              
+              <span class="small text-uppercase text-muted">
+                  <b>Mr.Karan Singh</b> - My experience with Incense Design has been exceptional. Their creativity is Top-notch and the best part that I like about them is their personalized service, each element that they designed was well thought through and the end product was amazing. Thoroughly happy with their work. Kudos to the ID team. <br>
+
+                  <b>Mrs. Mamta Mukherjee</b> - Professional people who know the interior space in and out! They deliver their projects with the sole aim of delighting the customer which is rare to see in an industry which is highly unorganised and brutal. Glad to see a people first approach! Kudos and all the best to the entire team at Incense Design! <br>
+
+                  <b>Mr. Chirag Aggarwal</b> - I've had a remarkable experience with Incense Design. Thorough professionals who've made their mark in the luxury interior design sector. <br>
+
+                  <b>Mr. Deepak Wadhwa </b>– Team Incense Design are amazingly wonderful they design with heart and soul, The space you give them they will paint it like the best painters, they will write the beautiful story like the best authors do, their designs will make you smile and make u feel as if that was your final destination, they are Passionate about their creations. you will never go wrong if you choose them, they are THR RIGHT CHOICE.</span>
+            </div>
+          </div>
+          <!-- End-->
         </div>
       </div>
     </div>
@@ -128,6 +161,9 @@
         </div>
       </div>
     </div>
+
+
+
   </div>
 </template>
 

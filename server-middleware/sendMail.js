@@ -5,6 +5,7 @@ app.use(bodyParser.json());
 
 app.post("/sendmail", async (req, res) => {
   var output;
+  console.log("dsfsdfsdf",process.env.EMAIL_PASS)
 
   // var emailPass = await process.env.EMAIL_PASS;
   try {
@@ -56,7 +57,7 @@ app.post("/sendmail", async (req, res) => {
     let dummy = Math.floor(Math.random() * (1000 - 100) + 100) / 100;
     let mailOptions = {
       from: `Contact@incensedesign.com`, // sender address
-      to: "contact@incensedesign.com", // list of receivers
+      to: "arun.incensedesign@gmail.com , saima.incensedesign@gmail.com", // list of receivers
       subject: `Incense Design ${req.body.emailType}`, // Subject line
       text: `From ${req.body.name} `, // plain text body
       html: output, // html body
@@ -79,23 +80,6 @@ app.post("/sendmail", async (req, res) => {
       });
     });
 
-    // sgMail.setApiKey(process.env.EMAIL_PASS);
-    // const msg = mailOptions;
-    // sgMail
-    //   .send(msg)
-    //   .then(() => {
-    //     res.send({
-    //       status: true,
-    //       message: "Email has been sent",
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     console.log("error catch >>> ", error);
-    //     res.send({
-    //       status: false,
-    //       message: "Error occurred while sending email",
-    //     });
-    //   });
   } catch (error) {
     console.log("error >>> ", error);
     res.send({

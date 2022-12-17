@@ -55,6 +55,7 @@ export default {
         infinite: false,
         autoplay: true,
         dots: false,
+        centerMode: true,
 
         responsive: [
           {
